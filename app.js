@@ -10,10 +10,10 @@ const evidence = [
   {
     status: "disputed",
     label: "Publicerad uppgift",
-    title: "Lurandepåståendet knöts direkt till William",
-    claim: "Namn, bild, vd-roll och det förvanskade citatet band det kategoriska lurandepåståendet direkt till William.",
+    title: "Karaktärsmordet knöts direkt till William",
+    claim: "Namn, bild, vd-roll och det förvanskade citatet gjorde William till ansiktet för ett kategoriskt lurandepåstående.",
     source: "Den fullständiga publiceringens rubrik, bild, bildtext och brödtext.",
-    conclusion: "Läsaren gavs en personifierad bild som inte återger den dokumenterade ansvarskedjan."
+    conclusion: "Läsaren gavs en personifierad bild som vände Williams branschroll mot honom och inte återgav den dokumenterade ansvarskedjan."
   },
   {
     status: "documented",
@@ -90,7 +90,7 @@ const evidence = [
   {
     status: "open",
     label: "Skadan",
-    title: "Efter publiceringarna förändrades Williams yrkesliv",
+    title: "Efter karaktärsmordet förändrades Williams yrkesliv",
     claim: "Inkomstfall, förlorade uppdrag, fortsatt spridning och konkurser dokumenterar efterförloppet.",
     source: "Inkomstuppgifter, konkursunderlag, rättelsemejl och dokumenterade spridningshändelser.",
     conclusion: "Artikelseriens bild följde William till kunder, uppdrag och framtida möjligheter."
