@@ -29,7 +29,7 @@ const evidence = [
     title: "Fakturorna skapades utifrån faktisk prestation",
     claim: "Fem fakturaexempel specificerar sökfras, prestationsdatum, pris per dag och eRocket-sida.",
     source: "Prestationsbaserad faktura, exempel 1–5.",
-    conclusion: "Faktureringen följde den modell William förklarade för Matilda Spetz och Johan Valkonen."
+    conclusion: "Faktureringen följde den modell William förklarade för reportern Matilda Spetz."
   },
   {
     status: "corroborated",
@@ -59,7 +59,7 @@ const evidence = [
     status: "corroborated",
     label: "Ansvarstagande",
     title: "William agerade när försäljningsproblem upptäcktes",
-    claim: "William redovisade intern kontroll, kundkontakt, avslutat samarbete och personalåtgärder för Matilda Spetz och Johan Valkonen.",
+    claim: "William redovisade intern kontroll, kundkontakt, avslutat samarbete och personalåtgärder för reportern Matilda Spetz.",
     source: "Flera tidskodade intervjuavsnitt och e-postkorrespondens.",
     conclusion: "Agerandet stödjer inte påståendet att William medvetet drev ett upplägg för att lura kunder."
   },
