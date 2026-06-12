@@ -1,0 +1,8 @@
+William Rydh-dokumentationen: integritetsankare
+Datum: 2026-06-12
+Antal filer: 80
+Hashalgoritm: SHA-256
+Merkle-root: 3892ae5510eae20a53fa7b4d30dafee2379ee833aabe093e055b02ff35036b75
+
+Kontroll: beräkna SHA-256 på varje fil i arkivet, sortera efter relativ sökväg och bygg Merkle-root enligt manifestet.
+Denna root kan tidsstämplas externt via OpenTimestamps/Bitcoin utan att originalfilerna skickas någonstans.
