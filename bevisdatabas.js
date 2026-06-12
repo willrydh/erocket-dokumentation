@@ -349,7 +349,7 @@ function escapeHTML(value) {
 }
 
 function archiveHref(path) {
-  return encodeURI(path).replaceAll("#", "%23");
+  return encodeURI(String(path).normalize("NFC")).replaceAll("#", "%23");
 }
 
 function formatBytes(bytes) {
