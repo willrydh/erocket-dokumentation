@@ -476,7 +476,10 @@ populateFullArchiveFilters();
 renderFullArchive();
 
 if (location.hash) {
-  requestAnimationFrame(() => {
-    document.querySelector(location.hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
+  const restoreHashPosition = () => {
+    document.querySelector(location.hash)?.scrollIntoView({ behavior: "auto", block: "start" });
+  };
+  requestAnimationFrame(restoreHashPosition);
+  setTimeout(restoreHashPosition, 150);
+  setTimeout(restoreHashPosition, 650);
 }
