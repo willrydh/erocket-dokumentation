@@ -154,6 +154,31 @@ h3 { line-height: 1.2; }
 }
 .disclosure strong { color: white; }
 
+.living-report {
+  display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; align-items: start;
+  margin-top: 28px; padding-block: 40px; position: relative;
+  background: linear-gradient(135deg, rgba(255,253,248,.98), rgba(239,232,220,.92));
+  border: 1px solid var(--line); border-left: 6px solid var(--green);
+  box-shadow: 0 18px 70px rgba(19, 28, 24, .09);
+}
+.living-report::before {
+  content: ""; position: absolute; top: 18px; right: 22px; width: 9px; height: 9px;
+  border-radius: 50%; background: var(--red); box-shadow: 0 0 0 8px rgba(196,70,46,.11);
+}
+.living-report h2 { margin: 10px 0 0; font-size: clamp(2.4rem, 4.6vw, 5.2rem); }
+.living-report-copy { color: var(--muted); font-size: .9rem; }
+.living-report-copy p { margin: 0 0 16px; }
+.living-report-badges {
+  grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 9px; padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.living-report-badges span {
+  display: inline-flex; align-items: center; min-height: 34px; padding: 6px 11px;
+  border: 1px solid rgba(22,82,58,.18); border-radius: 99px;
+  background: rgba(216,233,223,.66); color: var(--green);
+  font-size: .68rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+}
+
 .invitation-section { padding-block: 100px 40px; }
 .invitation-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 46px;
@@ -570,6 +595,7 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .numbers article:nth-child(2) { border-right: 0; }
   .intro-grid, .product-grid, .method-grid { grid-template-columns: 1fr; }
   .mass-layout, .actor-chain, .reco-proof, .risk-scale, .archive-controls, .full-archive-controls, .database-teaser, .audio-card, .rebuttal-card { grid-template-columns: 1fr; }
+  .living-report { grid-template-columns: 1fr; }
   .intro-grid .section-heading { position: static; }
   .quote-comparison { grid-template-columns: 1fr; gap: 16px; }
   .versus { transform: rotate(90deg); }
@@ -608,6 +634,7 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .numbers article { padding: 25px 14px; }
   .numbers strong { font-size: 2.7rem; }
   .intro-grid, #performance-model, #external-sales, .economy-section, .conclusions, .quote-section, .prior-section, .timeline-section, .method-section, .matrix-section, .final-question, .product-section, .evidence-mass, .why-section, .risk-model-section, .core-case-section, .invitation-section, .full-archive, .integrity-section, .bt-archive-section { padding-block: 85px; }
+  .living-report { margin-top: 0; padding-block: 34px; border-left-width: 0; border-top: 5px solid var(--green); }
   h2 { font-size: clamp(2.8rem, 14vw, 4.6rem); }
   .review-card { grid-template-columns: 45px 1fr; }
   .review-card h3 { font-size: 1.6rem; }
@@ -653,6 +680,8 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .hero-case { padding: 21px; }
   .hero-case blockquote { margin-block: 25px 22px; font-size: 1.55rem; }
   .disclosure { padding: 17px 14px; }
+  .living-report { width: min(100% - 28px, 1180px); padding-inline: 18px; }
+  .living-report-badges span { width: 100%; justify-content: center; text-align: center; }
   .numbers { grid-template-columns: 1fr; }
   .numbers article { display: grid; grid-template-columns: 78px 1fr; align-items: center; gap: 12px; border-right: 0; border-bottom: 1px solid var(--line); }
   .numbers article:last-child { border-bottom: 0; }
