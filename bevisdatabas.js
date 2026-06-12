@@ -20,8 +20,8 @@ const archiveItems = [
     shows: "Artikeln etablerade ramen om mardröm, klorna och grundlurade kunder.",
     matters: "Det är den centrala publiceringen där William personligen kopplas till lurandepåståendet.",
     counters: "Att skadan bara skulle avse ett bolag eller en neutral granskning.",
-    status: "Metadata och korta kärnutdrag indexerade. Full artikel återpubliceras inte öppet.",
-    link: ""
+    status: "Registrerad i artikelarkivet med URL, datum, korta kärnutdrag och privat säkrad fullsidesskärmdump.",
+    link: "artiklar.html#artikelarkiv"
   },
   {
     id: "BT-2022-12",
@@ -32,8 +32,8 @@ const archiveItems = [
     shows: "Uppföljningar om jagade kunder, hot om stämning, Moderaterna, Adwisemedia och bluffsida.",
     matters: "Visar att 19 november-publiceringen inte stod ensam utan blev en återanvänd berättelse.",
     counters: "Att det bara var en isolerad rubrik eller ett enstaka olyckligt citat.",
-    status: "Metadata och korta kärnutdrag indexerade.",
-    link: ""
+    status: "Registrerad i artikelarkivet med URL, datum, korta kärnutdrag och privat säkrade fullsidesskärmdumpar.",
+    link: "artiklar.html#artikelarkiv"
   },
   {
     id: "BT-2024",
@@ -44,8 +44,8 @@ const archiveItems = [
     shows: "Konkursartiklarna använder ramen 'granskade företagaren' och knyter konkurserna till tidigare granskning.",
     matters: "Visar fortsatt skada och fortsatt spridning av den etablerade negativa identiteten.",
     counters: "Att artikelserien saknade efterverkningar.",
-    status: "Metadata och korta kärnutdrag indexerade.",
-    link: ""
+    status: "Registrerad i artikelarkivet med URL, datum, korta kärnutdrag och privat säkrade fullsidesskärmdumpar.",
+    link: "artiklar.html#artikelarkiv"
   },
   {
     id: "I-001",
@@ -56,7 +56,7 @@ const archiveItems = [
     shows: "William förklarar prestationsmodellen, den externa säljkedjan, kundåtgärderna och risken att BT skulle missförstå allt.",
     matters: "Detta visar vad redaktionen faktiskt fick veta före publiceringen.",
     counters: "Att BT saknade tillgång till motbilden innan artikeln publicerades.",
-    status: "Transkriberad med tidskoder. Ljudspelare kräver publiceringskontroll.",
+    status: "Publicerad som ljudspelare med tidskodad lyssningsguide. Fulla transkript finns i ARK-044-ARK-049.",
     link: "artiklar.html#intervju"
   },
   {
@@ -68,8 +68,8 @@ const archiveItems = [
     shows: "Sammanfattar nyckelpartier i intervjun med tidskoder för snabb kontroll.",
     matters: "Gör två timmars originalljud granskningsbart utan att läsaren behöver börja från noll.",
     counters: "Att citat och förklaringar skulle vara efterhandskonstruktioner.",
-    status: "Publik PDF kan publiceras efter slutlig integritetskontroll.",
-    link: "bevis/tidskodat-utdragsprotokoll-intervju-2022-11-16.md"
+    status: "Publicerat i fullarkivet som ARK-075 och länkat från intervjusidan.",
+    link: "#ark-075"
   },
   {
     id: "A-001",
@@ -80,8 +80,8 @@ const archiveItems = [
     shows: "Avtalet skickades och signerades senare, inte under ett manipulerat telefonsamtal enligt den bild BT gav.",
     matters: "Visar att kunden hade ett skriftligt avtal med villkor och BankID-signering.",
     counters: "Att kunderna bara bands muntligt eller utan tydligt avtalsflöde.",
-    status: "Original finns. Utdrag visar topp-10-villkor, 12 månader och signeringsflöde. Kräver maskad publik kopia.",
-    link: ""
+    status: "Publicerad i fullarkivet som ARK-031. Utdrag visar topp-10-villkor, 12 månader och signeringsflöde.",
+    link: "#ark-031"
   },
   {
     id: "A-002",
@@ -92,8 +92,8 @@ const archiveItems = [
     shows: "Visar eRocket-avtalets struktur och villkor.",
     matters: "Stödjer att det fanns tydliga avtal, inte bara lösa säljlöften.",
     counters: "Att tjänsten såldes utan begriplig avtalsgrund.",
-    status: "Original finns. Kräver maskad publik kopia.",
-    link: ""
+    status: "Publicerad i fullarkivet som ARK-032.",
+    link: "#ark-032"
   },
   {
     id: "A-003",
@@ -104,8 +104,8 @@ const archiveItems = [
     shows: "Visar att avtal skickades ut av den anställda/säljaren själv och signerades av kund.",
     matters: "Relevant för ansvarskedjan och jäv-/källkritikspåret.",
     counters: "Att William personligen skulle ha dolt avtalsvillkor för kunderna.",
-    status: "Original finns. Kräver maskad publik kopia.",
-    link: ""
+    status: "Publicerad i fullarkivet som ARK-030.",
+    link: "#ark-030"
   },
   {
     id: "F-001",
@@ -116,8 +116,8 @@ const archiveItems = [
     shows: "Fakturorna specificerar sökfras, prestationsdatum, pris per dag och eRocket-sida.",
     matters: "Bevisar att fakturering skedde utifrån mätbar prestation, inte för ett tomt löfte.",
     counters: "Att kunder fakturerades utan leverans eller utan prestationsgrund.",
-    status: "Original finns. Kräver maskade publika kopior.",
-    link: ""
+    status: "Publicerade i fullarkivet som ARK-035-ARK-039.",
+    link: "#ark-035"
   },
   {
     id: "F-002",
@@ -128,8 +128,8 @@ const archiveItems = [
     shows: "Visar hur fakturering kunde se ut när prestation uppstod.",
     matters: "Binder samman ranking/prestation med ekonomiskt flöde.",
     counters: "Att fakturor var frikopplade från vad tjänsten faktiskt gjorde.",
-    status: "Original finns. Kräver maskad publik kopia.",
-    link: ""
+    status: "Publicerad i fullarkivet som ARK-026.",
+    link: "#ark-026"
   },
   {
     id: "F-003",
@@ -140,8 +140,8 @@ const archiveItems = [
     shows: "Extern säljaktör fakturerade Nordic Digitalization för eRocket-affärer.",
     matters: "Visar att försäljningsledet var externt och ekonomiskt verkligt.",
     counters: "Att kundproblemen rättvisande kunde beskrivas som Williams personliga försäljning.",
-    status: "Original finns. Kräver maskade publika kopior.",
-    link: ""
+    status: "Publicerade i fullarkivet som ARK-019-ARK-022 och sammanställda i ARK-033.",
+    link: "#ark-033"
   },
   {
     id: "SP-003",
@@ -152,9 +152,8 @@ const archiveItems = [
     shows: "Betalda provisionsfakturor visar att Empire of Sales fakturerade Nordic Digitalization för eRocket-affärer. Offentliga bolagsuppgifter anger Nenad Krstic som styrelseledamot/verklig huvudman i Empire of Sales i Borås AB.",
     matters: "Flyttar granskningen till den dokumenterade kundkontakt- och försäljningskedjan i stället för att låta William ensam bära bilden av kundmissnöjet.",
     counters: "Att BT kunde personifiera kundmissnöjet mot William utan att ge den externa säljaktören motsvarande granskning.",
-    status: "Provisionsfakturor finns i original och ska maskas. Offentliga bolagskällor kan länkas öppet.",
-    link: "https://www.bolagsfakta.se/5592438641-Empire_of_Sales_i_Boras_AB",
-    external: true
+    status: "Provisionsfakturor och Fortnox-sammanställning är publicerade i fullarkivet som ARK-019-ARK-022 och ARK-033. Offentliga bolagskällor anges i texten.",
+    link: "#ark-033"
   },
   {
     id: "SP-004",
@@ -163,7 +162,7 @@ const archiveItems = [
     date: "2024-2026",
     type: "Offentligt granskningsspår",
     shows: "Offentliga LinkedIn-uppgifter kopplar Nenad Krstic till Effektiv Media Group, som beskriver verksamhet inom digital marknadsföring.",
-    matters: "Relevansen är inte att påstå brott, utan att visa att samma person/sfär bör granskas när liknande digitala sälj- och marknadsföringstjänster fortsätter på marknaden.",
+    matters: "Relevansen är inte att påstå brott, utan att visa varför samma person/sfär är ett konkret granskningsspår när liknande digitala sälj- och marknadsföringstjänster fortsätter på marknaden.",
     counters: "Att den externa säljaktörens roll var oviktig eller avslutad som granskningsspår.",
     status: "Offentlig källa. Kundklagomål ska bara återges som dokumenterade omdömen, inte som fastslagna brott.",
     link: "https://se.linkedin.com/company/effektiv-media-group",
@@ -190,8 +189,8 @@ const archiveItems = [
     shows: "Samlad ökning av Google-placeringar för kundkampanjer.",
     matters: "Stödjer att tjänsten presterade i sökresultat.",
     counters: "Att tjänsten saknade verklig effekt.",
-    status: "Originalbild finns. Publik kopia ska kontrolleras.",
-    link: ""
+    status: "Publicerad i fullarkivet som ARK-018.",
+    link: "#ark-018"
   },
   {
     id: "P-003",
@@ -202,8 +201,8 @@ const archiveItems = [
     shows: "Hur tjänsten presenterades och vilka delar den bestod av.",
     matters: "Ger läsaren bransch- och produktkontext.",
     counters: "Att eRocket saknade begripligt tjänsteinnehåll.",
-    status: "Original finns. Publicerbar version bör sammanställas.",
-    link: ""
+    status: "Produkt- och avtalsrelaterade underlag är publicerade i fullarkivet. Se hela filarkivet post för post.",
+    link: "#alla-filer"
   },
   {
     id: "S-001",
@@ -214,8 +213,8 @@ const archiveItems = [
     shows: "Värdeintervall om 39,6-48,4 miljoner kronor före konkurserna.",
     matters: "Visar att det som förstördes var en värderad kommersiell tillgång, inte en bluff.",
     counters: "Att skadan bara avsåg en obetydlig idé.",
-    status: "Original finns. Publik version kan publiceras efter kontroll av uppdrags- och personuppgifter.",
-    link: ""
+    status: "Publicerad i fullarkivet som ARK-081 och hashad i manifestet.",
+    link: "#ark-081"
   },
   {
     id: "S-002",
@@ -226,8 +225,8 @@ const archiveItems = [
     shows: "Tjänsteinkomsten faller kraftigt efter publiceringarna.",
     matters: "Stödjer personlig ekonomisk skada.",
     counters: "Att publiceringen saknade konkret efterföljande skada.",
-    status: "Summerade belopp kan visas. Underlag bör inte publiceras rått.",
-    link: ""
+    status: "Skadebilden redovisas i bevismatris och juridiska underlag. Personliga råunderlag återges inte som fristående publik fil.",
+    link: "#ark-002"
   },
   {
     id: "S-003",
@@ -238,8 +237,8 @@ const archiveItems = [
     shows: "Nordic Digitalization, AWM och William Rydh Holding försätts i konkurs.",
     matters: "Visar sammanbrottet efter artikelseriens förtroendeskada.",
     counters: "Att skadan bara var abstrakt eller reputationsmässig.",
-    status: "Offentliga delar kan sammanfattas. Kompletta handlingar kräver kontroll.",
-    link: ""
+    status: "Konkurs- och skadebilden redovisas i bevismatris, komplettering och juristunderlag.",
+    link: "#ark-070"
   },
   {
     id: "SP-001",
@@ -274,8 +273,8 @@ const archiveItems = [
     shows: "William invände omedelbart mot felaktigheterna och beskrev skadan.",
     matters: "Visar att redaktionen och ansvarig utgivare informerades efter publicering.",
     counters: "Att felen inte påtalades eller att skadan inte var förutsebar.",
-    status: "Original finns. Publicerbar version ska maskas.",
-    link: ""
+    status: "Korrespondensen är publicerad i fullarkivet som ARK-076-ARK-078.",
+    link: "#ark-076"
   },
   {
     id: "BT-CLAIMS",
@@ -298,8 +297,8 @@ const archiveItems = [
     shows: "Samlad juridisk position om grovt förtal, personskada, bevisning och kompletteringar.",
     matters: "Binder ihop bevislinjerna i ett formellt ärende.",
     counters: "Att invändningarna bara är opinionsmässiga.",
-    status: "PDF finns. Publik version bör granskas för personuppgifter.",
-    link: ""
+    status: "Publicerad i fullarkivet som ARK-078, med kompletteringar i ARK-011-ARK-012.",
+    link: "#ark-078"
   },
   {
     id: "J-002",
@@ -310,8 +309,8 @@ const archiveItems = [
     shows: "Kopplar BT-påståenden till motbevis, bevisvärde och juridisk relevans.",
     matters: "Gör bevismassan navigerbar för polis, advokat och läsare.",
     counters: "Att materialet skulle vara rörigt eller osammanhängande.",
-    status: "PDF finns. Publik version bör granskas.",
-    link: ""
+    status: "Publicerad i fullarkivet som ARK-001-ARK-002.",
+    link: "#ark-002"
   }
 ];
 
@@ -387,7 +386,7 @@ function renderArchive() {
         <dt>Publik status</dt>
         <dd>${escapeHTML(item.status)}</dd>
       </dl>
-      ${item.link ? `<a class="archive-link" href="${escapeHTML(item.link)}" target="${item.external || !item.link.startsWith('#') ? '_blank' : '_self'}" rel="noreferrer">${item.external ? 'Öppna extern källa' : 'Öppna underlag'}</a>` : `<span class="archive-pending">Maskad publik kopia ska kopplas</span>`}
+      ${item.link ? `<a class="archive-link" href="${escapeHTML(item.link)}" target="${item.external || !item.link.startsWith('#') ? '_blank' : '_self'}" rel="noreferrer">${item.external ? 'Öppna extern källa' : 'Öppna underlag'}</a>` : `<a class="archive-link" href="#alla-filer">Öppna fullarkivet</a>`}
     </article>
   `).join("") || `<p class="archive-empty">Inga bevisposter matchar filtret.</p>`;
 }
@@ -427,12 +426,14 @@ function renderFullArchive() {
 
   fullArchiveGrid.innerHTML = filtered.map((item) => {
     const href = archiveHref(item.path);
+    const isImage = ["PNG", "JPG", "JPEG", "WEBP"].includes(item.type);
     return `
       <article class="file-card" id="${escapeHTML(item.id.toLowerCase())}">
         <div class="file-card-top">
           <span class="archive-id">${escapeHTML(item.id)}</span>
           <span class="file-type">${escapeHTML(item.type)}</span>
         </div>
+        ${isImage ? `<a class="file-preview" href="${escapeHTML(href)}" target="_blank" rel="noreferrer"><img src="${escapeHTML(href)}" alt="${escapeHTML(item.title)}" loading="lazy"></a>` : ""}
         <h3>${escapeHTML(item.title)}</h3>
         <p class="file-category">${escapeHTML(item.category)} · ${escapeHTML(formatBytes(item.size))}</p>
         <p>${escapeHTML(item.shows)}</p>
@@ -444,7 +445,7 @@ function renderFullArchive() {
           <dt>SHA-256</dt>
           <dd class="hash">${escapeHTML(item.sha256.slice(0, 18))}...</dd>
         </dl>
-        <a class="archive-link" href="${escapeHTML(href)}" target="_blank" rel="noreferrer">Öppna filen</a>
+        <a class="archive-link" href="${escapeHTML(href)}" target="_blank" rel="noreferrer">${isImage ? "Öppna originalbild" : "Öppna filen"}</a>
       </article>
     `;
   }).join("") || `<p class="archive-empty">Inga filer matchar sökningen.</p>`;

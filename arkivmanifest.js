@@ -1,4 +1,4 @@
-// Genererad från arkiv/FULLSTANDIG_DOKUMENTLEVERANS_K613147-26. Uppdatera genom att köra manifestgenereringen igen.
+// Genererad från arkiv/FULLSTANDIG_DOKUMENTLEVERANS_K613147-26. Uppdaterad med publicerade bevisfiler och SHA-256.
 window.fullArchiveItems = [
   {
     "id": "ARK-001",
@@ -11,7 +11,7 @@ window.fullArchiveItems = [
     "size": 43980,
     "sha256": "48bc2e6306663d1211ab8645e1000a43cef5b53f6f88b2a9b1cc08e484afa0fd",
     "shows": "Kopplar påståenden, motbevis och juridisk relevans i ett granskningsbart format.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-002",
@@ -24,7 +24,7 @@ window.fullArchiveItems = [
     "size": 131657,
     "sha256": "b48582f2e8f93088500692c8733431214053d994e8c83b78de04ab02e5991f97",
     "shows": "Kopplar påståenden, motbevis och juridisk relevans i ett granskningsbart format.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-003",
@@ -37,7 +37,7 @@ window.fullArchiveItems = [
     "size": 41747,
     "sha256": "2ca9e5b205593918364a7a687251a6666ecfeac45073fef351179b195f97a1a2",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-004",
@@ -50,7 +50,7 @@ window.fullArchiveItems = [
     "size": 131103,
     "sha256": "5666f00e97af94467d4fe049fa49b1a8971b44a0a231ef3b52dfb0dc4924df8b",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-005",
@@ -63,7 +63,7 @@ window.fullArchiveItems = [
     "size": 176474,
     "sha256": "d459a8fd663a798dae7d6cd97be49adc92589b897bd11da81c58dbb8c6a9b8d6",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-006",
@@ -76,7 +76,7 @@ window.fullArchiveItems = [
     "size": 583692,
     "sha256": "b5670884be68dcf352c7138889a8d1e8eb34728964714b6a7f014e91f59f9ced",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-007",
@@ -89,7 +89,7 @@ window.fullArchiveItems = [
     "size": 340464,
     "sha256": "5e4ac9b1b039d6e9c0f065dadcd39581880b20e450966ef5eff2dce442cbada5",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-008",
@@ -102,7 +102,7 @@ window.fullArchiveItems = [
     "size": 167896,
     "sha256": "06d20ea8106167daa07d7b71a9c98876e1190162cbbe34661a6dcd79f9e6c6bc",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-009",
@@ -115,7 +115,7 @@ window.fullArchiveItems = [
     "size": 80511,
     "sha256": "6f7505c49f0addca618aa0ef88ee944756e32086cdf4856dccbf4821db26669d",
     "shows": "Visar granskningsspår kring extern säljkedja och senare närliggande digital verksamhet.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-010",
@@ -128,7 +128,7 @@ window.fullArchiveItems = [
     "size": 76862,
     "sha256": "e74d31bdc1c04b07b3ea5cb0baeb18c7e422694174130b30b8c3e56dc69fb59f",
     "shows": "Visar granskningsspår kring extern säljkedja och senare närliggande digital verksamhet.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-011",
@@ -141,7 +141,7 @@ window.fullArchiveItems = [
     "size": 51957,
     "sha256": "c769d02a80a0e99703ec403fd686b7fc7a9e36f0529c33059bd37c9a13049c6a",
     "shows": "Formell komplettering som binder ihop skadebild, artikelkedja och bevisning.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-012",
@@ -154,7 +154,7 @@ window.fullArchiveItems = [
     "size": 246340,
     "sha256": "6e71148933fb8493bb5ced8275a8c397b276cb1057782176ea5104087b04c2d2",
     "shows": "Formell komplettering som binder ihop skadebild, artikelkedja och bevisning.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-013",
@@ -167,7 +167,7 @@ window.fullArchiveItems = [
     "size": 1212,
     "sha256": "08cc717a6890a7b39787cf9df1310fcfd4f35f5d9774e5fd1fe281c4d70e75bc",
     "shows": "Läsförst-fil som förklarar leveransens struktur och hur materialet ska användas.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-014",
@@ -180,7 +180,7 @@ window.fullArchiveItems = [
     "size": 44208,
     "sha256": "f36ecd040f5e9c10089b33a9f8f8d643b0e6900a2d59e72ffc405e0aa9ec0ef0",
     "shows": "Tidskodade nyckelutdrag som gör originalljudet snabbt kontrollerbart.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-015",
@@ -193,7 +193,7 @@ window.fullArchiveItems = [
     "size": 143548,
     "sha256": "2b251674923e251fbdd3bae0b0081cc61f4faa63fc2c8f1e9339128b09d3e008",
     "shows": "Tidskodade nyckelutdrag som gör originalljudet snabbt kontrollerbart.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-016",
@@ -206,7 +206,7 @@ window.fullArchiveItems = [
     "size": 96539,
     "sha256": "6c878a661309c7b219de95522ffb1ac60a4ab605fa061072d765b448135583e8",
     "shows": "Visar att investeringsnivån fanns i BT:s material/ram och att satsningen var kommersiellt omfattande.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-017",
@@ -219,7 +219,7 @@ window.fullArchiveItems = [
     "size": 31852,
     "sha256": "fdf054b956567e6b5378133fda6cb68522c13ad09c14dc221838e345796db65a",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-018",
@@ -232,7 +232,7 @@ window.fullArchiveItems = [
     "size": 109878,
     "sha256": "1413aae58abb4eb30fb24ebfa00cef4e1a03516fa935f1748b6e213cabd6ef5c",
     "shows": "Visar produkt-/rankingdata och att tjänsten hade mätbar Google-prestation.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-019",
@@ -245,7 +245,7 @@ window.fullArchiveItems = [
     "size": 74985,
     "sha256": "e18dbdb76c1595ec6545847472c97cec1dd740d786700ef878e699df0659e1ed",
     "shows": "Visar betalade fakturor och den dokumenterade ekonomiska relationen till extern säljaktör.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-020",
@@ -258,7 +258,7 @@ window.fullArchiveItems = [
     "size": 74951,
     "sha256": "b6a56c1c30caf4c3b31a31b1e69a64c81a411c458e4597550592ec18e3268a69",
     "shows": "Visar betalade fakturor och den dokumenterade ekonomiska relationen till extern säljaktör.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-021",
@@ -271,7 +271,7 @@ window.fullArchiveItems = [
     "size": 74788,
     "sha256": "31670a31a2bd29d3d72a9d8b14731f14be600b4f2445760a1a075a22c7156469",
     "shows": "Visar betalade fakturor och den dokumenterade ekonomiska relationen till extern säljaktör.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-022",
@@ -284,7 +284,7 @@ window.fullArchiveItems = [
     "size": 76524,
     "sha256": "b5bb0d57616958f6956f3fe2b1d202717a5c7562dd66dd56d2c135bf94ad8555",
     "shows": "Visar betalade fakturor och den dokumenterade ekonomiska relationen till extern säljaktör.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-023",
@@ -297,7 +297,7 @@ window.fullArchiveItems = [
     "size": 23786,
     "sha256": "ea0961795da9bb8e935f88197db6335fe4f0752fd3ccf473f8cd82e6b1be139f",
     "shows": "Bemöter BT:s formuleringar om gratis/provmånad genom att visa hur kostnadsfri nyttjanderätt och prestationsmodell förklarades.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-024",
@@ -310,7 +310,7 @@ window.fullArchiveItems = [
     "size": 39630,
     "sha256": "2c9adb02abcce2839f15ec255875f8e6194c43fb681f21b93a0450d3b76cbaaf",
     "shows": "Bemöter BT:s formuleringar om gratis/provmånad genom att visa hur kostnadsfri nyttjanderätt och prestationsmodell förklarades.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-025",
@@ -323,7 +323,7 @@ window.fullArchiveItems = [
     "size": 35860,
     "sha256": "de54f2ebc39ab988ed0631800ea1dc743cd8b6c981449433f1ed7e5ec07e8360",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-026",
@@ -336,7 +336,7 @@ window.fullArchiveItems = [
     "size": 137378,
     "sha256": "597cad273e57f0602eb16e750d28916ddd2aea4b5561c4172c12effca5652a98",
     "shows": "Visar prestationsbaserad fakturering: faktura uppstod när avtalad synlighet/prestation fanns.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-027",
@@ -349,7 +349,7 @@ window.fullArchiveItems = [
     "size": 60197,
     "sha256": "40c2ceaa3a7df8c0ce851ffaa5c606855bb0cf99bb15e5d72f4482419a05b56c",
     "shows": "Visar att avtal skickades ut av säljare/anställd och att avtalsvillkor fanns i flödet.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-028",
@@ -362,7 +362,7 @@ window.fullArchiveItems = [
     "size": 1326816,
     "sha256": "7360eb25ed5314940618800cffd257ba5a22728fff6441194afa295ed632b74a",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-029",
@@ -375,7 +375,7 @@ window.fullArchiveItems = [
     "size": 692168,
     "sha256": "d503ef48d3c37eed4bac2c4cbce694419276d5c927fd81ac57802e9e0cb02842",
     "shows": "Visar skriftligt BankID-/avtalsflöde och vad kunden fick i dokumenterad form.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-030",
@@ -388,7 +388,7 @@ window.fullArchiveItems = [
     "size": 608926,
     "sha256": "b3110177ecd28c9713205f5cd444d58935d5e41f1f20f68fc01d5e38ea77cdc4",
     "shows": "Visar skriftligt BankID-/avtalsflöde och vad kunden fick i dokumenterad form.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-031",
@@ -401,7 +401,7 @@ window.fullArchiveItems = [
     "size": 1866125,
     "sha256": "419a4c3ac7f053dd7a8867da6739734877f79e4e6c7acc81a814a7b8804b0ea8",
     "shows": "Visar skriftligt BankID-/avtalsflöde och vad kunden fick i dokumenterad form.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-032",
@@ -414,7 +414,7 @@ window.fullArchiveItems = [
     "size": 1861152,
     "sha256": "a5a4a15130b37c3abb8cfb5137236984ef0b29b84f8f7598a1566e04b537b8a3",
     "shows": "Visar skriftligt BankID-/avtalsflöde och vad kunden fick i dokumenterad form.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-033",
@@ -427,7 +427,7 @@ window.fullArchiveItems = [
     "size": 140663,
     "sha256": "57d0b01c2d2e399df9808abc201ed2327609213d80d5acdf44a42b3b8c8f4c0d",
     "shows": "Visar betalade fakturor och den dokumenterade ekonomiska relationen till extern säljaktör.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-034",
@@ -440,7 +440,7 @@ window.fullArchiveItems = [
     "size": 206055,
     "sha256": "e668a86316b7e67ba67c0e09fa5db7b812e93560bf46909f371c261cb273cec4",
     "shows": "Visar tidigare branschmerit och digitalt renommé före BT:s omsvängning.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-035",
@@ -453,7 +453,7 @@ window.fullArchiveItems = [
     "size": 39242,
     "sha256": "7282950d21368b9ae235924e56d3a4dec3ac5059cff1b5e3fe6a1c04c7020827",
     "shows": "Visar prestationsbaserad fakturering: faktura uppstod när avtalad synlighet/prestation fanns.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-036",
@@ -466,7 +466,7 @@ window.fullArchiveItems = [
     "size": 36652,
     "sha256": "1a5d1c116010c90d2d9820403f909de1eb8a207de8c894951dd720609ae085c9",
     "shows": "Visar prestationsbaserad fakturering: faktura uppstod när avtalad synlighet/prestation fanns.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-037",
@@ -479,7 +479,7 @@ window.fullArchiveItems = [
     "size": 38512,
     "sha256": "d7fe7e1fefed57e3888f40578e61e139a22c17b23e0e2dc38c2b9d6394d6d126",
     "shows": "Visar prestationsbaserad fakturering: faktura uppstod när avtalad synlighet/prestation fanns.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-038",
@@ -492,7 +492,7 @@ window.fullArchiveItems = [
     "size": 84387,
     "sha256": "50dd003a94d9f3ac4024203c764d85f51eb2bbc69bf2b0bbc6d694be9d945536",
     "shows": "Visar prestationsbaserad fakturering: faktura uppstod när avtalad synlighet/prestation fanns.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-039",
@@ -505,7 +505,7 @@ window.fullArchiveItems = [
     "size": 37487,
     "sha256": "182dc84f4d995f7f438da6ac9ef940c02fbf7d0795952789bcbeda30d5bc2c65",
     "shows": "Visar prestationsbaserad fakturering: faktura uppstod när avtalad synlighet/prestation fanns.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-040",
@@ -518,7 +518,7 @@ window.fullArchiveItems = [
     "size": 41986,
     "sha256": "4f523b27ae11e6000bb1518ce5c1f7b4947a887baa601a109a4d5a2d7cc9c3e6",
     "shows": "Visar intern/extern kommunikation kopplad till den säljmiljö där kundkontakten uppstod.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-041",
@@ -531,7 +531,7 @@ window.fullArchiveItems = [
     "size": 119498,
     "sha256": "9df00545e72a10b9030489e0baea7745014d81890cb3a1031750915f900d3dc9",
     "shows": "Visar att avtal skickades ut av säljare/anställd och att avtalsvillkor fanns i flödet.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-042",
@@ -544,7 +544,7 @@ window.fullArchiveItems = [
     "size": 38388,
     "sha256": "71ae525be9d1a5e11b9a04ec9c7a4c64a5f0968047d38a2c78033c1223494c6b",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-043",
@@ -557,7 +557,7 @@ window.fullArchiveItems = [
     "size": 49497,
     "sha256": "6bb8ba42c38190ae44e25e0b3a9783d61a0318e62b1c23b44364bd71942615cd",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-044",
@@ -570,7 +570,7 @@ window.fullArchiveItems = [
     "size": 630618,
     "sha256": "ac23690524e89559725966b293cf12d447741e97aa4f84545cc3443c670be4fa",
     "shows": "Gör intervjuerna sökbara och kontrollerbara med tidskoder/transkribering.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-045",
@@ -583,7 +583,7 @@ window.fullArchiveItems = [
     "size": 251005,
     "sha256": "e60ab347fb7bd4a2c1a055541a80c2ddbadaac430d2a91c85695e62c5a020a99",
     "shows": "Gör intervjuerna sökbara och kontrollerbara med tidskoder/transkribering.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-046",
@@ -596,7 +596,7 @@ window.fullArchiveItems = [
     "size": 248721,
     "sha256": "ae764d9cb30687e5b7c95e1182c6b03effd17d4179a92de12877e5d2bb0aa42a",
     "shows": "Gör intervjuerna sökbara och kontrollerbara med tidskoder/transkribering.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-047",
@@ -609,7 +609,7 @@ window.fullArchiveItems = [
     "size": 760281,
     "sha256": "a53c42baefd440798ed590eb8af490fc5fb4c3b51a7df3cee566390e225f7298",
     "shows": "Gör intervjuerna sökbara och kontrollerbara med tidskoder/transkribering.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-048",
@@ -622,7 +622,7 @@ window.fullArchiveItems = [
     "size": 294368,
     "sha256": "d265f158ceb58ca5797223583627cd39bde68280064cd848c30ed2241957f8e4",
     "shows": "Gör intervjuerna sökbara och kontrollerbara med tidskoder/transkribering.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-049",
@@ -635,7 +635,7 @@ window.fullArchiveItems = [
     "size": 291231,
     "sha256": "e8d4888955c979f85d0bf2d76b2ee057a38683b2f99225a6f87ac83b9a1baca1",
     "shows": "Gör intervjuerna sökbara och kontrollerbara med tidskoder/transkribering.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-050",
@@ -648,7 +648,7 @@ window.fullArchiveItems = [
     "size": 394576,
     "sha256": "098eceec29118ebc2137c6b34f96082b645851e73e13cec68e3ee9c214faa8a8",
     "shows": "Gör intervjuerna sökbara och kontrollerbara med tidskoder/transkribering.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-051",
@@ -661,7 +661,7 @@ window.fullArchiveItems = [
     "size": 150844,
     "sha256": "63dd14c45c7514be1b0319b88099edf1f01d6c8ab35fb873ec67c71e3b6e799d",
     "shows": "Gör intervjuerna sökbara och kontrollerbara med tidskoder/transkribering.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-052",
@@ -674,7 +674,7 @@ window.fullArchiveItems = [
     "size": 149928,
     "sha256": "1e42a28f7b60169b3f164bff50d873be40f058e3f80bb4e69d876ae41c164e27",
     "shows": "Gör intervjuerna sökbara och kontrollerbara med tidskoder/transkribering.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-053",
@@ -687,7 +687,7 @@ window.fullArchiveItems = [
     "size": 10907,
     "sha256": "b7d40f38206e9988697bdc4812475f31e7fc8b6ebf518d506a6d493910795004",
     "shows": "Bemöter BT:s formuleringar om gratis/provmånad genom att visa hur kostnadsfri nyttjanderätt och prestationsmodell förklarades.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-054",
@@ -700,7 +700,7 @@ window.fullArchiveItems = [
     "size": 3690,
     "sha256": "d15389e63aab410aaf2db97bed21aac8518ec9619d4f0eaa789e72cd5504caf0",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-055",
@@ -713,7 +713,7 @@ window.fullArchiveItems = [
     "size": 6254,
     "sha256": "2988bd00119f6937657d9ef0d3153eeb1d4ef82e2351876734c799562bf4addb",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-056",
@@ -726,7 +726,7 @@ window.fullArchiveItems = [
     "size": 3065,
     "sha256": "39d41151a15c9d8542fa0c6e6e574c6fac5024051db89ceb234c0fd949bfba3e",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-057",
@@ -739,7 +739,7 @@ window.fullArchiveItems = [
     "size": 6202,
     "sha256": "2c252e5aa1b292067d25677fc356a14f3339f427c97b81c5358e803ea1343e73",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-058",
@@ -752,7 +752,7 @@ window.fullArchiveItems = [
     "size": 2192,
     "sha256": "2ae83d78128194717d812c8a4296501918d70180da609dedda284d2045674be8",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-059",
@@ -765,7 +765,7 @@ window.fullArchiveItems = [
     "size": 4705,
     "sha256": "ce2629a0d5c482de590c554d1becd8945bae7be4c92c7c2d227a8a9eda7adc3e",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-060",
@@ -778,7 +778,7 @@ window.fullArchiveItems = [
     "size": 2972,
     "sha256": "d0d93053f0ae4d2b671c871f629f7ba7723340740dd88e24057b0eba0efd08f3",
     "shows": "Tekniskt arbetsunderlag som visar hur transkriberingen/kontrollen genomfördes.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-061",
@@ -791,7 +791,7 @@ window.fullArchiveItems = [
     "size": 1852,
     "sha256": "50705fe33a022121ba2afe29b1cb849ec881c10b92a2d1f988fc3350c163dea1",
     "shows": "Ingår i den fullständiga dokumentleveransen och används för att visa sammanhang, motbevis eller skadebild.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-062",
@@ -804,7 +804,7 @@ window.fullArchiveItems = [
     "size": 4269,
     "sha256": "2b1fd6a3a86e2149a82b9813a9d4a7de0fdcadaeee4d109089ab733c10e94c2f",
     "shows": "Tekniskt arbetsunderlag som visar hur transkriberingen/kontrollen genomfördes.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-063",
@@ -817,7 +817,7 @@ window.fullArchiveItems = [
     "size": 12263,
     "sha256": "d1156f363f0d384c48cf13a02937d579ee8089a4a77c3f3020d083d67f0e9b81",
     "shows": "Kopplar påståenden, motbevis och juridisk relevans i ett granskningsbart format.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-064",
@@ -830,7 +830,7 @@ window.fullArchiveItems = [
     "size": 6809,
     "sha256": "2608226f3c3dffb09472d4d3270980ea43ee598ce0043cb65c9c33b6fb97c7ae",
     "shows": "Juridiskt arbetsunderlag för förtal, ansvar, skada och möjlig processföring.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-065",
@@ -843,7 +843,7 @@ window.fullArchiveItems = [
     "size": 20311,
     "sha256": "a4a725aaa2e18f1ae6c366bf1eae8d1dc1c6b44e65518b8b9ec8cbb0f486cedd",
     "shows": "Juridiskt arbetsunderlag för förtal, ansvar, skada och möjlig processföring.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-066",
@@ -856,7 +856,7 @@ window.fullArchiveItems = [
     "size": 47155,
     "sha256": "59ee04b75143f2190b7b9e0486c325223e8ef3efeb8c4fe1945a89919f2183e1",
     "shows": "Juridiskt arbetsunderlag för förtal, ansvar, skada och möjlig processföring.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-067",
@@ -869,7 +869,7 @@ window.fullArchiveItems = [
     "size": 186189,
     "sha256": "073a4aca967f069df7141a02fabbfd2749e576709aa93b1cb06fc1ab85f540dc",
     "shows": "Juridiskt arbetsunderlag för förtal, ansvar, skada och möjlig processföring.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-068",
@@ -882,7 +882,7 @@ window.fullArchiveItems = [
     "size": 10037,
     "sha256": "adb80988c59eb062068ff6fd5ac570d112b28410edab5f479562ded4f03d2db8",
     "shows": "Juridiskt arbetsunderlag för förtal, ansvar, skada och möjlig processföring.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-069",
@@ -895,7 +895,7 @@ window.fullArchiveItems = [
     "size": 43287,
     "sha256": "999763696ae3631990fc510263212856827aeeb8e7dfda2c597abb5337b22e4a",
     "shows": "Juridiskt arbetsunderlag för förtal, ansvar, skada och möjlig processföring.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-070",
@@ -908,7 +908,7 @@ window.fullArchiveItems = [
     "size": 140752,
     "sha256": "df2876bc79c6103530dbf4ee7ef14255f30c4458bc0600c561acbbb5afdc4901",
     "shows": "Juridiskt arbetsunderlag för förtal, ansvar, skada och möjlig processföring.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-071",
@@ -921,7 +921,7 @@ window.fullArchiveItems = [
     "size": 33883,
     "sha256": "47b2550c22fbba76b21b0db0be94c7b03ede996956096606f0509acd6e1778ee",
     "shows": "Formell komplettering som binder ihop skadebild, artikelkedja och bevisning.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-072",
@@ -934,7 +934,7 @@ window.fullArchiveItems = [
     "size": 8038,
     "sha256": "d583fea1c9e1d8b151d2664d25e0e250e81e8eb27b21e641fa63133f33ebab5b",
     "shows": "Analys av intervjumaterialets bevisvärde och vad BT fick veta före publicering.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-073",
@@ -947,7 +947,7 @@ window.fullArchiveItems = [
     "size": 42414,
     "sha256": "b40c9f086b17325d5ea1b7c23372b23e52610a57dbabe40ea9d6ec716d879e0e",
     "shows": "Analys av intervjumaterialets bevisvärde och vad BT fick veta före publicering.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-074",
@@ -960,7 +960,7 @@ window.fullArchiveItems = [
     "size": 140651,
     "sha256": "d912685460b000e24bf27f7305041b3879c6cdf906ba7cfa08a2f89195c2f132",
     "shows": "Analys av intervjumaterialets bevisvärde och vad BT fick veta före publicering.",
-    "status": "Klickbar lokalt. Kontrollera bild/PDF före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-075",
@@ -973,7 +973,7 @@ window.fullArchiveItems = [
     "size": 13551,
     "sha256": "c5717aaac039b1b6c8e5c4e9ecfc49cd6f6738f42c0418a6550fe3063a1c6c7a",
     "shows": "Tidskodade nyckelutdrag som gör originalljudet snabbt kontrollerbart.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-076",
@@ -986,7 +986,7 @@ window.fullArchiveItems = [
     "size": 1346276,
     "sha256": "16236164e4091d6a5cfaf192a401c14deb30f7ee180a30b4fcbc661d2ff8dc3b",
     "shows": "Korrespondens som visar rättelseinvändningar och hur BT underrättades.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-077",
@@ -999,7 +999,7 @@ window.fullArchiveItems = [
     "size": 1390808,
     "sha256": "3ad030924c184c068003a00a1b2fc4ab5f24650b80a36e1801167eedc9e3b35c",
     "shows": "Korrespondens som visar rättelseinvändningar och hur BT underrättades.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-078",
@@ -1012,7 +1012,7 @@ window.fullArchiveItems = [
     "size": 45194,
     "sha256": "bb9ee1c64e397f2dbdc484b9b0b9cf2e409de202ee96c86354146ca58627de44",
     "shows": "Ursprunglig brottsanmälan som startade ärendet.",
-    "status": "Klickbar lokalt. Kontrollera/maska person- och kunduppgifter före bred extern spridning."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-079",
@@ -1025,7 +1025,7 @@ window.fullArchiveItems = [
     "size": 604,
     "sha256": "f686d055b0614a32ede9abb73ea4e22e385a3c8392091fe805f74d65ca956289",
     "shows": "Läsförst-fil som förklarar leveransens struktur och hur materialet ska användas.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   },
   {
     "id": "ARK-080",
@@ -1035,9 +1035,22 @@ window.fullArchiveItems = [
     "fileName": "SHA256SUMS.txt",
     "path": "arkiv/FULLSTANDIG_DOKUMENTLEVERANS_K613147-26/SHA256SUMS.txt",
     "type": "TXT",
-    "size": 12722,
-    "sha256": "8f8ed76952b6af77dbab514aaed43da9e472ba69137b72a894347b69ce77b6eb",
+    "size": 12840,
+    "sha256": "32c2cd81a3fdacbc87f3f73c0f02bb39e7306fb18c14a1f145150bc578bec496",
     "shows": "Kontrollfil som gör dokumentleveransen verifierbar genom hashvärden.",
-    "status": "Direkt klickbar i arkivet."
+    "status": "Publicerad kontrollfil. Öppningsbar direkt från bevisdatabasen."
+  },
+  {
+    "id": "ARK-081",
+    "category": "Skada och värdering",
+    "folder": "02_TIDIGARE_BEVISUNDERLAG",
+    "title": "Värdering eRocket",
+    "fileName": "Värdering eRocket.pdf",
+    "path": "arkiv/FULLSTANDIG_DOKUMENTLEVERANS_K613147-26/02_TIDIGARE_BEVISUNDERLAG/Värdering eRocket.pdf",
+    "type": "PDF",
+    "size": 674594,
+    "sha256": "351d9e3d50ed68fa5eaa813d8729ea0397d2ac1e98aa15b3b715949d18e123a5",
+    "shows": "Förkonkursvärdering av eRocket och det värdeintervall som används som stöd för skade- och yrkandefrågan.",
+    "status": "Publicerad i fullarkivet. Öppningsbar direkt från bevisdatabasen. SHA-256 finns i manifestet."
   }
 ];

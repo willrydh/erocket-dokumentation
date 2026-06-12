@@ -1,12 +1,12 @@
 {
   "schema": "william-rydh-documentation-integrity-manifest/v1",
-  "generatedAt": "2026-06-12T18:05:27.918Z",
+  "generatedAt": "2026-06-12T21:10:00.000+02:00",
   "archiveBase": "arkiv/FULLSTANDIG_DOKUMENTLEVERANS_K613147-26",
-  "fileCount": 80,
+  "fileCount": 81,
   "hashAlgorithm": "SHA-256",
   "merkle": {
     "algorithm": "binary sha256(left || right), duplicate last leaf when odd",
-    "root": "3892ae5510eae20a53fa7b4d30dafee2379ee833aabe093e055b02ff35036b75"
+    "root": "f9708f65a54fc895b8412f307fb1ed171cb6f793d7fe2df6ed03f945f0b93730"
   },
   "intendedUse": "Verifiera att dokumentleveransen inte har ändrats efter publicerad manifesttidpunkt och förbereda extern tidsstämpling via OpenTimestamps/Bitcoin.",
   "files": [
@@ -226,6 +226,11 @@
       "sha256": "6bb8ba42c38190ae44e25e0b3a9783d61a0318e62b1c23b44364bd71942615cd"
     },
     {
+      "path": "arkiv/FULLSTANDIG_DOKUMENTLEVERANS_K613147-26/02_TIDIGARE_BEVISUNDERLAG/Värdering eRocket.pdf",
+      "bytes": 674594,
+      "sha256": "351d9e3d50ed68fa5eaa813d8729ea0397d2ac1e98aa15b3b715949d18e123a5"
+    },
+    {
       "path": "arkiv/FULLSTANDIG_DOKUMENTLEVERANS_K613147-26/03_TRANSKRIBERINGAR/2022-11-16 _ Borås Tidning intervju - Oklippt.segment.jsonl",
       "bytes": 630618,
       "sha256": "ac23690524e89559725966b293cf12d447741e97aa4f84545cc3443c670be4fa"
@@ -407,8 +412,8 @@
     },
     {
       "path": "arkiv/FULLSTANDIG_DOKUMENTLEVERANS_K613147-26/SHA256SUMS.txt",
-      "bytes": 12722,
-      "sha256": "8f8ed76952b6af77dbab514aaed43da9e472ba69137b72a894347b69ce77b6eb"
+      "bytes": 12840,
+      "sha256": "32c2cd81a3fdacbc87f3f73c0f02bb39e7306fb18c14a1f145150bc578bec496"
     }
   ]
 }

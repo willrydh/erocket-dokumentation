@@ -232,6 +232,25 @@ h3 { line-height: 1.2; }
   margin-top: 70px; padding: 36px; background: var(--white); border: 1px solid var(--line);
 }
 
+.visual-proof { padding-block: 118px; }
+.visual-proof-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 48px;
+}
+.visual-card {
+  min-height: 360px; display: flex; flex-direction: column; margin: 0;
+  background: var(--white); border: 1px solid var(--line); border-top: 5px solid var(--green);
+  box-shadow: 0 14px 38px rgba(26, 29, 25, .08); overflow: hidden;
+}
+.visual-card.large { grid-column: span 2; }
+.visual-card a { display: block; min-height: 210px; background: #e8e0d2; }
+.visual-card img {
+  width: 100%; height: 100%; min-height: 210px; max-height: 330px; object-fit: cover; object-position: top left;
+  border-bottom: 1px solid var(--line);
+}
+.visual-card figcaption { display: grid; gap: 8px; padding: 18px 20px 22px; }
+.visual-card strong { color: var(--red-dark); font: 1.35rem/1.14 var(--serif); }
+.visual-card span { color: var(--muted); font-size: .94rem; line-height: 1.58; }
+
 .evidence-mass { padding-block: 118px; }
 .mass-layout { display: grid; grid-template-columns: 1.2fr .8fr; gap: 30px; margin-top: 58px; align-items: stretch; }
 .mass-stack { display: grid; gap: 9px; }
@@ -495,6 +514,15 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   padding: 4px 8px; border-radius: 99px; background: #e4efe8; color: var(--green);
   font-size: .58rem; font-weight: 800; letter-spacing: .08em;
 }
+.file-preview {
+  display: block; margin: 18px -6px 4px; overflow: hidden; border: 1px solid var(--line);
+  background: #e8e0d2; text-decoration: none;
+}
+.file-preview img {
+  width: 100%; height: 190px; object-fit: cover; object-position: top left;
+  transition: transform .25s ease;
+}
+.file-preview:hover img { transform: scale(1.03); }
 .file-card h3 { margin: 26px 0 10px; font: 1.35rem/1.16 var(--serif); overflow-wrap: anywhere; }
 .file-category { margin: 0 0 16px; color: var(--muted); font-size: .68rem; font-weight: 700; }
 .file-card p:not(.file-category) { color: var(--muted); font-size: .72rem; }
@@ -622,7 +650,7 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .intro-grid .section-heading { position: static; }
   .quote-comparison { grid-template-columns: 1fr; gap: 16px; }
   .versus { transform: rotate(90deg); }
-  .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .motive-grid, .risk-comparison, .arc-track, .invitation-grid, .archive-grid, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid { grid-template-columns: 1fr 1fr; }
+  .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .motive-grid, .risk-comparison, .arc-track, .invitation-grid, .archive-grid, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid, .visual-proof-grid { grid-template-columns: 1fr 1fr; }
   .chain { grid-template-columns: 1fr; }
   .chain i { transform: rotate(90deg); text-align: center; }
   .knowledge-grid { grid-template-columns: 1fr 1fr; }
@@ -658,14 +686,15 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .numbers { grid-template-columns: 1fr 1fr; margin-top: 45px; }
   .numbers article { padding: 25px 14px; }
   .numbers strong { font-size: 2.7rem; }
-  .intro-grid, #performance-model, #external-sales, .economy-section, .conclusions, .quote-section, .prior-section, .timeline-section, .method-section, .matrix-section, .final-question, .product-section, .evidence-mass, .why-section, .risk-model-section, .core-case-section, .invitation-section, .full-archive, .integrity-section, .bt-archive-section { padding-block: 85px; }
+  .intro-grid, #performance-model, #external-sales, .economy-section, .conclusions, .quote-section, .prior-section, .timeline-section, .method-section, .matrix-section, .final-question, .product-section, .evidence-mass, .why-section, .risk-model-section, .core-case-section, .invitation-section, .full-archive, .integrity-section, .bt-archive-section, .visual-proof { padding-block: 85px; }
   .living-report { margin-top: 0; padding-block: 34px; border-left-width: 0; border-top: 5px solid var(--green); }
   h2 { font-size: clamp(2.35rem, 10.5vw, 3.8rem); line-height: 1.04; }
   .review-card { grid-template-columns: 45px 1fr; }
   .review-card h3 { font-size: 1.6rem; }
   .quote-panel { min-height: auto; padding: 25px; transform: none !important; }
   .quote-panel blockquote { margin: 35px 0 25px; font-size: 1.8rem; }
-  .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .knowledge-grid, .principles, .motive-grid, .risk-comparison, .scenario-grid, .editorial-sequence, .arc-track, .invitation-grid, .archive-grid, .archive-stats, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid { grid-template-columns: 1fr; }
+  .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .knowledge-grid, .principles, .motive-grid, .risk-comparison, .scenario-grid, .editorial-sequence, .arc-track, .invitation-grid, .archive-grid, .archive-stats, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid, .visual-proof-grid { grid-template-columns: 1fr; }
+  .visual-card.large { grid-column: auto; }
   .mass-stack article { grid-template-columns: 58px 1fr; }
   .mass-verdict, .motive-analysis, .why-verdict { padding: 24px; }
   .actor-card { min-height: 330px; }

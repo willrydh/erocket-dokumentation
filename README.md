@@ -2,7 +2,7 @@
 
 En statisk dokumentredovisning som jämför Borås Tidnings publiceringar om
 William Rydh med avtal, fakturor, produktdata, originalljud, samtida
-handlingar och en fullständig dokumentleverans om 80 filer.
+handlingar och en fullständig dokumentleverans om 81 filer.
 
 ## Lokal och extern förhandsvisning
 
