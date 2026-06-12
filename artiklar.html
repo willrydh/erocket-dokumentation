@@ -13,7 +13,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=rebuttal-redesign1">
+  <link rel="stylesheet" href="styles.css?v=mobile-nav-redesign">
+  <script src="app.js?v=mobile-nav-audio1" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -418,41 +419,6 @@
       `).join("");
     }
 
-    const interviewAudio = document.querySelector("#btInterviewAudio");
-    document.querySelectorAll(".time-jump").forEach((button) => {
-      button.addEventListener("click", async () => {
-        if (!interviewAudio) return;
-        const targetTime = Number(button.dataset.time);
-        const seekAndPlay = async () => {
-          interviewAudio.currentTime = targetTime;
-          interviewAudio.scrollIntoView({ behavior: "smooth", block: "center" });
-          try {
-            await interviewAudio.play();
-          } catch (_) {
-            interviewAudio.focus();
-          }
-        };
-
-        document.querySelectorAll(".time-jump").forEach((item) => item.classList.remove("active"));
-        button.classList.add("active");
-
-        if (interviewAudio.readyState >= 1) {
-          await seekAndPlay();
-          return;
-        }
-
-        interviewAudio.preload = "auto";
-        interviewAudio.load();
-        interviewAudio.addEventListener("loadedmetadata", seekAndPlay, { once: true });
-      });
-    });
-
-    const menuButton = document.querySelector("#menuButton");
-    const siteNav = document.querySelector("#siteNav");
-    menuButton.addEventListener("click", () => {
-      const open = siteNav.classList.toggle("open");
-      menuButton.setAttribute("aria-expanded", String(open));
-    });
   </script>
 </body>
 </html>

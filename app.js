@@ -141,17 +141,118 @@ document.querySelectorAll(".evidence-jump").forEach((button) => {
 const menuButton = document.querySelector("#menuButton");
 const siteNav = document.querySelector("#siteNav");
 if (menuButton && siteNav) {
-  menuButton.addEventListener("click", () => {
-    const open = siteNav.classList.toggle("open");
+  const closedMenuLabel = menuButton.textContent.trim() || "Meny";
+  const setNavOpen = (open) => {
+    siteNav.classList.toggle("open", open);
     menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.textContent = open ? "Stäng" : closedMenuLabel;
+    document.body.classList.toggle("nav-open", open);
+  };
+
+  menuButton.addEventListener("click", () => {
+    setNavOpen(!siteNav.classList.contains("open"));
   });
   siteNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      siteNav.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
+      setNavOpen(false);
+    });
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setNavOpen(false);
+  });
+}
+
+const interviewSource = "media/intervju-bt-2022-11-16-oklippt.m4a";
+const interviewPositionKey = "wr-bt-interview-position";
+
+function ensureInterviewPlayer() {
+  if (document.querySelector("#globalInterviewPlayer")) return;
+
+  const player = document.createElement("aside");
+  player.id = "globalInterviewPlayer";
+  player.className = "sticky-interview-player";
+  player.setAttribute("aria-label", "Fast spelare för BT-intervjun");
+  player.innerHTML = `
+    <div class="sticky-interview-copy">
+      <span>Originalljudet</span>
+      <strong>BT-intervjun 16 november 2022</strong>
+      <small>Lyssna medan du granskar bevisningen.</small>
+    </div>
+    <audio id="globalInterviewAudio" data-interview-audio controls preload="metadata" src="${interviewSource}"></audio>
+    <div class="sticky-interview-links">
+      <a href="artiklar.html#intervjutidskoder">Tidskoder</a>
+      <a href="bevis/transkript-intervju-bt-2022-11-16-oklippt.md">Transkript</a>
+    </div>
+  `;
+  document.body.appendChild(player);
+  document.body.classList.add("has-sticky-player");
+}
+
+function getInterviewAudios() {
+  return [...document.querySelectorAll("[data-interview-audio], #btInterviewAudio")];
+}
+
+function setupInterviewAudio() {
+  ensureInterviewPlayer();
+  const pageAudio = document.querySelector("#btInterviewAudio");
+  if (pageAudio) pageAudio.setAttribute("data-interview-audio", "page");
+
+  const audios = getInterviewAudios();
+  const savedPosition = Number(localStorage.getItem(interviewPositionKey) || 0);
+
+  audios.forEach((audio) => {
+    audio.addEventListener("loadedmetadata", () => {
+      if (savedPosition > 0 && savedPosition < audio.duration - 3 && audio.currentTime < 1) {
+        audio.currentTime = savedPosition;
+      }
+    }, { once: true });
+
+    audio.addEventListener("play", () => {
+      audios.forEach((otherAudio) => {
+        if (otherAudio !== audio) otherAudio.pause();
+      });
+    });
+
+    audio.addEventListener("timeupdate", () => {
+      if (Number.isFinite(audio.currentTime)) {
+        localStorage.setItem(interviewPositionKey, String(Math.floor(audio.currentTime)));
+      }
+    });
+  });
+
+  document.querySelectorAll(".time-jump").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const targetTime = Number(button.dataset.time);
+      const audio = document.querySelector("#globalInterviewAudio") || document.querySelector("#btInterviewAudio");
+      if (!audio || !Number.isFinite(targetTime)) return;
+      document.querySelectorAll(".time-jump").forEach((item) => item.classList.remove("active"));
+      button.classList.add("active");
+
+      const seekAndPlay = async () => {
+        getInterviewAudios().forEach((item) => {
+          item.currentTime = targetTime;
+          if (item !== audio) item.pause();
+        });
+        audio.currentTime = targetTime;
+        try {
+          await audio.play();
+        } catch (error) {
+          audio.focus();
+        }
+      };
+
+      if (audio.readyState >= 1) {
+        await seekAndPlay();
+      } else {
+        audio.preload = "auto";
+        audio.load();
+        audio.addEventListener("loadedmetadata", seekAndPlay, { once: true });
+      }
     });
   });
 }
+
+setupInterviewAudio();
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
