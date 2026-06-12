@@ -35,9 +35,14 @@
   <script src="app.js" defer></script>
 </head>
 <body>
+  <div class="ambient-layer" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
 
-  <header class="site-header">
+  <header class="site-header" data-page="overview">
     <a class="brand" href="#top" aria-label="Till sidans början">
       <span class="brand-mark">WR</span>
       <span>
@@ -47,15 +52,19 @@
     </a>
     <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav">Meny</button>
     <nav id="siteNav" aria-label="Huvudnavigation">
-      <a href="#huvudfragan">Vad BT visste</a>
-      <a href="#artikelbage">BT:s artikelbåge</a>
-      <a href="#bevismatris">Beviskedjan</a>
-      <a href="#riskmodellen">Affärsmodellen</a>
-      <a href="#varfor">Spridning och intressen</a>
-      <a href="#tidslinje">Tidslinje</a>
-      <a href="bevisdatabas.html">Bevisdatabas</a>
-      <a href="artiklar.html">Artikel för artikel</a>
-      <a href="#metod">Metod</a>
+      <div class="nav-primary" aria-label="Huvudsidor">
+        <a href="index.html" data-nav="overview">Översikt</a>
+        <a href="bevisdatabas.html" data-nav="database">Bevisdatabas</a>
+        <a href="artiklar.html" data-nav="articles">Artiklar & intervju</a>
+      </div>
+      <div class="nav-secondary" aria-label="På den här sidan">
+        <a href="#huvudfragan">Vad BT visste</a>
+        <a href="#artikelbage">Artikelbågen</a>
+        <a href="#bevismatris">Beviskedjan</a>
+        <a href="#riskmodellen">Affärsmodellen</a>
+        <a href="#varfor">Spridning</a>
+        <a href="#tidslinje">Tidslinje</a>
+      </div>
     </nav>
   </header>
 

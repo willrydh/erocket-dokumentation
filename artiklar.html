@@ -30,7 +30,12 @@
   </script>
 </head>
 <body class="archive-page">
-  <header class="site-header">
+  <div class="ambient-layer" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <header class="site-header" data-page="articles">
     <a class="brand" href="index.html" aria-label="Till startsidan">
       <span class="brand-mark">WR</span>
       <span>
@@ -40,12 +45,18 @@
     </a>
     <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav">Meny</button>
     <nav id="siteNav" aria-label="Huvudnavigation">
-      <a href="index.html">Översikt</a>
-      <a href="bevisdatabas.html">Bevisdatabas</a>
-      <a href="#artikelarkiv">Artikelarkiv</a>
-      <a href="#artikelmotbevis">Påstående → motbevis</a>
-      <a href="#intervju">Intervju med tidskoder</a>
-      <a href="#metod">Metod</a>
+      <div class="nav-primary" aria-label="Huvudsidor">
+        <a href="index.html" data-nav="overview">Översikt</a>
+        <a href="bevisdatabas.html" data-nav="database">Bevisdatabas</a>
+        <a href="artiklar.html" data-nav="articles">Artiklar & intervju</a>
+      </div>
+      <div class="nav-secondary" aria-label="På den här sidan">
+        <a href="#intervju">Intervju</a>
+        <a href="#intervjutidskoder">Tidskoder</a>
+        <a href="#artikelarkiv">Artikelarkiv</a>
+        <a href="#artikelmotbevis">Motbevis</a>
+        <a href="#metod">Metod</a>
+      </div>
     </nav>
   </header>
 
