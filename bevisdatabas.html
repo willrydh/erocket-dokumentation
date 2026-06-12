@@ -14,8 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=documentary-tone2">
-  <script src="app.js?v=documentary-tone2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=archive-browser2">
+  <script src="app.js?v=archive-browser2" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,8 +31,8 @@
     }
   }
   </script>
-  <script src="arkivmanifest.js?v=81-unmasked" defer></script>
-  <script src="bevisdatabas.js?v=archive-paths" defer></script>
+  <script src="arkivmanifest.js?v=archive-browser2"></script>
+  <script src="bevisdatabas.js?v=archive-browser2" defer></script>
 </head>
 <body class="archive-page">
   <div class="ambient-layer" aria-hidden="true">
@@ -123,7 +123,17 @@
       </div>
       <div class="full-archive-summary">
         <strong id="fullArchiveCount">0</strong>
-        <span>matchande filer visas. Varje fil har direktlänk, kategori och hashvärde för kontroll.</span>
+        <span>matchande filer visas. Utan sökfilter visas samtliga 81 filer. Bläddra fil för fil här nedan eller scrolla hela arkivlistan.</span>
+      </div>
+      <div class="full-archive-browser" id="fullArchiveBrowser" aria-label="Bläddra mellan alla bevisfiler">
+        <div class="browser-toolbar">
+          <button id="fullArchivePrev" type="button">Föregående fil</button>
+          <span id="fullArchivePosition">Fil 1 av 81</span>
+          <button id="fullArchiveNext" type="button">Nästa fil</button>
+        </div>
+        <label for="fullArchiveJump">Hoppa direkt till fil</label>
+        <select id="fullArchiveJump"></select>
+        <div class="browser-viewer" id="fullArchiveViewer"></div>
       </div>
       <div class="full-archive-grid" id="fullArchiveGrid" aria-live="polite"></div>
     </section>

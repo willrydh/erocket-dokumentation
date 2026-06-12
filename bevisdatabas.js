@@ -327,13 +327,21 @@ const categoryLabels = {
 const grid = document.querySelector("#archiveGrid");
 const count = document.querySelector("#archiveCount");
 const search = document.querySelector("#archiveSearch");
-const fullArchiveItems = window.fullArchiveItems || [];
 const fullArchiveGrid = document.querySelector("#fullArchiveGrid");
 const fullArchiveCount = document.querySelector("#fullArchiveCount");
 const fullArchiveStat = document.querySelector("#fullArchiveStat");
 const fullArchiveSearch = document.querySelector("#fullArchiveSearch");
 const fullArchiveFilter = document.querySelector("#fullArchiveFilter");
+const fullArchiveBrowser = document.querySelector("#fullArchiveBrowser");
+const fullArchiveViewer = document.querySelector("#fullArchiveViewer");
+const fullArchivePosition = document.querySelector("#fullArchivePosition");
+const fullArchivePrev = document.querySelector("#fullArchivePrev");
+const fullArchiveNext = document.querySelector("#fullArchiveNext");
+const fullArchiveJump = document.querySelector("#fullArchiveJump");
 let activeFilter = "all";
+let fullArchiveItems = Array.isArray(window.fullArchiveItems) ? window.fullArchiveItems : [];
+let fullArchiveCurrentIndex = 0;
+let currentFullArchiveItems = fullArchiveItems;
 
 function normalize(value) {
   return String(value).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -357,6 +365,10 @@ function formatBytes(bytes) {
   if (bytes < 1024) return `${bytes} B`;
   if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} kB`;
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
+function isImageFile(item) {
+  return ["PNG", "JPG", "JPEG", "WEBP"].includes(item.type);
 }
 
 function renderArchive() {
@@ -393,6 +405,7 @@ function renderArchive() {
 
 function populateFullArchiveFilters() {
   if (!fullArchiveFilter) return;
+  fullArchiveFilter.querySelectorAll("option:not([value='all'])").forEach((option) => option.remove());
   const categories = [...new Set(fullArchiveItems.map((item) => item.category))].sort((a, b) => a.localeCompare(b, "sv"));
   fullArchiveFilter.insertAdjacentHTML("beforeend", categories.map((category) => (
     `<option value="${escapeHTML(category)}">${escapeHTML(category)}</option>`
@@ -404,6 +417,7 @@ function renderFullArchive() {
 
   const query = normalize(fullArchiveSearch?.value || "");
   const selectedCategory = fullArchiveFilter?.value || "all";
+  const activeId = currentFullArchiveItems[fullArchiveCurrentIndex]?.id;
   const filtered = fullArchiveItems.filter((item) => {
     const matchesCategory = selectedCategory === "all" || item.category === selectedCategory;
     const haystack = normalize([
@@ -420,13 +434,18 @@ function renderFullArchive() {
     ].join(" "));
     return matchesCategory && (!query || haystack.includes(query));
   });
+  currentFullArchiveItems = filtered;
+  const retainedIndex = filtered.findIndex((item) => item.id === activeId);
+  fullArchiveCurrentIndex = retainedIndex >= 0 ? retainedIndex : 0;
 
   if (fullArchiveStat) fullArchiveStat.textContent = fullArchiveItems.length;
   if (fullArchiveCount) fullArchiveCount.textContent = filtered.length;
 
+  renderFullArchiveBrowser();
+
   fullArchiveGrid.innerHTML = filtered.map((item) => {
     const href = archiveHref(item.path);
-    const isImage = ["PNG", "JPG", "JPEG", "WEBP"].includes(item.type);
+    const isImage = isImageFile(item);
     return `
       <article class="file-card" id="${escapeHTML(item.id.toLowerCase())}">
         <div class="file-card-top">
@@ -445,10 +464,88 @@ function renderFullArchive() {
           <dt>SHA-256</dt>
           <dd class="hash">${escapeHTML(item.sha256.slice(0, 18))}...</dd>
         </dl>
+        <button class="archive-link file-browse-button" type="button" data-archive-id="${escapeHTML(item.id)}">Visa i bläddraren</button>
         <a class="archive-link" href="${escapeHTML(href)}" target="_blank" rel="noreferrer">${isImage ? "Öppna originalbild" : "Öppna filen"}</a>
       </article>
     `;
   }).join("") || `<p class="archive-empty">Inga filer matchar sökningen.</p>`;
+}
+
+function renderFullArchiveBrowser() {
+  if (!fullArchiveBrowser || !fullArchiveViewer) return;
+  const total = currentFullArchiveItems.length;
+  const item = currentFullArchiveItems[fullArchiveCurrentIndex];
+
+  fullArchiveBrowser.hidden = total === 0;
+  if (!item) {
+    fullArchiveViewer.innerHTML = "";
+    if (fullArchivePosition) fullArchivePosition.textContent = "Inga filer";
+    return;
+  }
+
+  const href = archiveHref(item.path);
+  const isImage = isImageFile(item);
+  const position = `Fil ${fullArchiveCurrentIndex + 1} av ${total}`;
+
+  if (fullArchivePosition) fullArchivePosition.textContent = position;
+  if (fullArchivePrev) fullArchivePrev.disabled = fullArchiveCurrentIndex === 0;
+  if (fullArchiveNext) fullArchiveNext.disabled = fullArchiveCurrentIndex >= total - 1;
+  if (fullArchiveJump) {
+    fullArchiveJump.innerHTML = currentFullArchiveItems.map((archiveItem, index) => (
+      `<option value="${index}" ${index === fullArchiveCurrentIndex ? "selected" : ""}>${escapeHTML(archiveItem.id)} · ${escapeHTML(archiveItem.title)}</option>`
+    )).join("");
+  }
+
+  fullArchiveViewer.innerHTML = `
+    <article class="browser-file-card">
+      <div class="browser-preview ${isImage ? "is-image" : "is-document"}">
+        ${isImage
+          ? `<a href="${escapeHTML(href)}" target="_blank" rel="noreferrer"><img src="${escapeHTML(href)}" alt="${escapeHTML(item.title)}"></a>`
+          : `<a href="${escapeHTML(href)}" target="_blank" rel="noreferrer"><span>${escapeHTML(item.type)}</span><strong>Öppna dokumentet</strong></a>`
+        }
+      </div>
+      <div class="browser-file-copy">
+        <p class="file-category">${escapeHTML(position)} · ${escapeHTML(item.category)} · ${escapeHTML(formatBytes(item.size))}</p>
+        <h3>${escapeHTML(item.title)}</h3>
+        <p>${escapeHTML(item.shows)}</p>
+        <dl>
+          <dt>Filnamn</dt>
+          <dd>${escapeHTML(item.fileName)}</dd>
+          <dt>Status</dt>
+          <dd>${escapeHTML(item.status)}</dd>
+          <dt>SHA-256</dt>
+          <dd class="hash">${escapeHTML(item.sha256)}</dd>
+        </dl>
+        <a class="archive-link" href="${escapeHTML(href)}" target="_blank" rel="noreferrer">${isImage ? "Öppna originalbild" : "Öppna filen"}</a>
+      </div>
+    </article>
+  `;
+}
+
+function setFullArchiveIndex(index) {
+  if (!currentFullArchiveItems.length) return;
+  fullArchiveCurrentIndex = Math.max(0, Math.min(index, currentFullArchiveItems.length - 1));
+  renderFullArchiveBrowser();
+}
+
+function loadArchiveManifest() {
+  if (Array.isArray(window.fullArchiveItems) && window.fullArchiveItems.length) {
+    fullArchiveItems = window.fullArchiveItems;
+    currentFullArchiveItems = fullArchiveItems;
+    return Promise.resolve();
+  }
+
+  return new Promise((resolve) => {
+    const script = document.createElement("script");
+    script.src = `arkivmanifest.js?v=archive-browser1-retry-${Date.now()}`;
+    script.onload = () => {
+      fullArchiveItems = Array.isArray(window.fullArchiveItems) ? window.fullArchiveItems : [];
+      currentFullArchiveItems = fullArchiveItems;
+      resolve();
+    };
+    script.onerror = () => resolve();
+    document.head.appendChild(script);
+  });
 }
 
 document.querySelectorAll(".archive-filter").forEach((button) => {
@@ -463,17 +560,24 @@ document.querySelectorAll(".archive-filter").forEach((button) => {
 search.addEventListener("input", renderArchive);
 fullArchiveSearch?.addEventListener("input", renderFullArchive);
 fullArchiveFilter?.addEventListener("change", renderFullArchive);
-
-const menuButton = document.querySelector("#menuButton");
-const siteNav = document.querySelector("#siteNav");
-menuButton.addEventListener("click", () => {
-  const open = siteNav.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", String(open));
+fullArchivePrev?.addEventListener("click", () => setFullArchiveIndex(fullArchiveCurrentIndex - 1));
+fullArchiveNext?.addEventListener("click", () => setFullArchiveIndex(fullArchiveCurrentIndex + 1));
+fullArchiveJump?.addEventListener("change", () => setFullArchiveIndex(Number(fullArchiveJump.value)));
+fullArchiveGrid?.addEventListener("click", (event) => {
+  const button = event.target.closest(".file-browse-button");
+  if (!button) return;
+  const index = currentFullArchiveItems.findIndex((item) => item.id === button.dataset.archiveId);
+  if (index >= 0) {
+    setFullArchiveIndex(index);
+    fullArchiveBrowser?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 });
 
 renderArchive();
-populateFullArchiveFilters();
-renderFullArchive();
+loadArchiveManifest().then(() => {
+  populateFullArchiveFilters();
+  renderFullArchive();
+});
 
 if (location.hash) {
   const restoreHashPosition = () => {
