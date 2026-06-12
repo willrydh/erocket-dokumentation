@@ -169,3 +169,23 @@ window.addEventListener("scroll", () => {
   const height = document.documentElement.scrollHeight - window.innerHeight;
   if (progress) progress.style.width = `${height > 0 ? (window.scrollY / height) * 100 : 0}%`;
 }, { passive: true });
+
+const timelineCompassLinks = [...document.querySelectorAll(".timeline-compass a[href^='#']")];
+if (timelineCompassLinks.length) {
+  const sectionMap = new Map(
+    timelineCompassLinks
+      .map((link) => [link.getAttribute("href").slice(1), link])
+      .filter(([id]) => document.getElementById(id))
+  );
+  const setActiveTimelineSection = (id) => {
+    timelineCompassLinks.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === `#${id}`));
+  };
+  setActiveTimelineSection(timelineCompassLinks[0].getAttribute("href").slice(1));
+  const timelineObserver = new IntersectionObserver((entries) => {
+    const visible = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (visible) setActiveTimelineSection(visible.target.id);
+  }, { rootMargin: "-35% 0px -45% 0px", threshold: [0.12, 0.35, 0.6] });
+  sectionMap.forEach((_, id) => timelineObserver.observe(document.getElementById(id)));
+}

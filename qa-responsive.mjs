@@ -98,7 +98,11 @@ try {
       const metrics = await send("Runtime.evaluate", {
         returnByValue: true,
         expression: `JSON.stringify((() => {
-          const ignored = (element) => element.closest(".ambient-layer") || element.closest(".reading-progress");
+          const ignored = (element) =>
+            element.closest(".ambient-layer") ||
+            element.closest(".reading-progress") ||
+            element.closest(".mobile-journey-nav") ||
+            element.closest(".timeline-compass");
           const overflow = [...document.querySelectorAll("body *")]
             .filter((element) => !ignored(element))
             .map((element) => {
@@ -140,7 +144,7 @@ try {
       const parsed = JSON.parse(metrics.result.value);
       results.push({ width: viewport.label, ...parsed });
 
-      if (["index.html", "artiklar.html", "bevisdatabas.html"].includes(page) && ["360", "390"].includes(viewport.label)) {
+      if (["index.html", "tidslinje.html", "artiklar.html", "bevisdatabas.html"].includes(page) && ["360", "390"].includes(viewport.label)) {
         const screenshot = await send("Page.captureScreenshot", { format: "png", fromSurface: true });
         writeFileSync(`${outDir}/${page.replace(".html", "")}-${viewport.label}-top.png`, Buffer.from(screenshot.data, "base64"));
       }

@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=responsive-audit1">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=mobile-journey2">
+  <script src="app.js?v=mobile-journey1" defer></script>
 </head>
 <body>
   <div class="ambient-layer" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -38,6 +38,17 @@
     </nav>
   </header>
 
+  <div class="mobile-journey-nav" aria-label="Resans huvudsteg">
+    <a href="index.html" data-mobile-nav="overview"><b>01</b><span>Start</span></a>
+    <a href="tidslinje.html" data-mobile-nav="timeline"><b>02</b><span>Tidslinje</span></a>
+    <a href="modell.html" data-mobile-nav="model"><b>03</b><span>Modell</span></a>
+    <a href="artiklar.html" data-mobile-nav="articles"><b>04</b><span>Artiklar</span></a>
+    <a href="bevisdatabas.html" data-mobile-nav="database"><b>05</b><span>Bevis</span></a>
+    <a href="skada.html" data-mobile-nav="damage"><b>06</b><span>Skada</span></a>
+    <a href="juridik.html" data-mobile-nav="legal"><b>07</b><span>Juridik</span></a>
+  </div>
+
+
   <main>
     <section class="archive-hero">
       <div class="section-shell">
@@ -46,6 +57,13 @@
         <p class="hero-intro">Tidslinjen visar före-bilden, eRocket-satsningen, intervjun, publiceringarna, skadeförloppet och den juridiska vägen framåt. Den är byggd för att läsaren snabbt ska förstå när BT visste vad.</p>
       </div>
     </section>
+
+    <nav class="timeline-compass section-shell" aria-label="Tidslinjens stationer">
+      <a href="#fore"><b>01</b><span>Före</span><small>Renommé</small></a>
+      <a href="#brytpunkt"><b>02</b><span>Brytpunkten</span><small>Intervju + publicering</small></a>
+      <a href="#efter"><b>03</b><span>Efter</span><small>Spridning</small></a>
+      <a href="#process"><b>04</b><span>Process</span><small>Anmälan + juridik</small></a>
+    </nav>
 
     <section class="article-arc section-shell" id="fore">
       <div class="section-heading reveal">
@@ -84,7 +102,7 @@
       </div>
       <div class="arc-track">
         <article class="arc-card pivot reveal"><span>4-14 dec 2022</span><h3>Uppföljningar</h3><p>Ord som "jagas", "hotas", "kritiserade" och "bluffsida" förstärker personbilden.</p></article>
-        <article class="arc-card after reveal"><span>28 juni 2023</span><h3>Reco-spridning</h3><p>BT-länkar används i ett enstjärnigt Reco-omdöme utan beskriven kundupplevelse.</p></article>
+        <article class="arc-card after reveal"><span>28 juni 2023</span><h3>Gota Media/Reco-spåret</h3><p>BT:s egna artiklar används i ett enstjärnigt Reco-omdöme kopplat till en Gota Media-representant, utan beskriven kundupplevelse.</p></article>
         <article class="arc-card after reveal"><span>Apr-maj 2024</span><h3>Konkursramen</h3><p>BT återanvänder etiketten "granskade företagaren" i konkursrapporteringen.</p></article>
       </div>
     </section>
