@@ -3,33 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="William Rydh-dokumentationen: bevis, intervjuer, avtal, fakturor och artikelkarta om Borås Tidnings publiceringar, ansvarskedjan och den dokumenterade skadan på 50 miljoner kronor.">
+  <meta name="description" content="William Rydh-dokumentationen: en visuell ingång till bevisningen om Borås Tidnings publiceringar, eRocket, ansvarskedjan och den dokumenterade skadan.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://willrydh.github.io/erocket-dokumentation/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="William Rydh-dokumentationen: Borås Tidning fick motbevisen">
-  <meta property="og:description" content="En dokumentbaserad redovisning av Borås Tidnings publiceringar, ansvarskedjan, den externa säljkedjan och skadan på 50 miljoner kronor.">
+  <meta property="og:title" content="William Rydh-dokumentationen: den visuella resan genom bevisningen">
+  <meta property="og:description" content="En dokumenterad visuell resa genom eRocket, BT:s publiceringar, motbevisen, skadan och den juridiska processen.">
   <meta property="og:url" content="https://willrydh.github.io/erocket-dokumentation/">
   <meta name="twitter:card" content="summary_large_image">
-  <title>William Rydh-dokumentationen | Borås Tidning, bevisningen och 50-miljonersskadan</title>
+  <title>William Rydh-dokumentationen | Visuell resa genom bevisningen</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=visual-journey1">
+  <link rel="stylesheet" href="styles.css?v=site-structure2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "William Rydh-dokumentationen",
     "url": "https://willrydh.github.io/erocket-dokumentation/",
-    "description": "Dokumenterad bevisredovisning om William Rydh, Borås Tidnings publiceringar, eRocket, Nordic Digitalization och den påstådda skadan om 50 miljoner kronor.",
-    "inLanguage": "sv-SE",
-    "about": [
-      {"@type": "Thing", "name": "eRocket"},
-      {"@type": "Person", "name": "William Rydh"},
-      {"@type": "Organization", "name": "Nordic Digitalization AB"},
-      {"@type": "Organization", "name": "Borås Tidning"}
-    ]
+    "description": "Visuell dokumentation om William Rydh, Borås Tidning, eRocket, motbevisningen och skadan.",
+    "inLanguage": "sv-SE"
   }
   </script>
   <script src="app.js" defer></script>
@@ -43,30 +37,28 @@
   <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
 
   <header class="site-header" data-page="overview">
-    <a class="brand" href="#top" aria-label="Till sidans början">
+    <a class="brand" href="index.html" aria-label="Till startsidan">
       <span class="brand-mark">WR</span>
       <span>
         <strong>William Rydh-dokumentationen</strong>
-        <small>Borås Tidning · 50 miljoner</small>
+        <small>Visuell översikt</small>
       </span>
     </a>
     <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav">Meny</button>
     <nav id="siteNav" aria-label="Huvudnavigation">
       <div class="nav-primary" aria-label="Huvudsidor">
-        <a href="index.html" data-nav="overview">Översikt</a>
-        <a href="bevisdatabas.html" data-nav="database">Bevisdatabas</a>
+        <a href="index.html" data-nav="overview">Start</a>
+        <a href="tidslinje.html" data-nav="timeline">Tidslinje</a>
         <a href="artiklar.html" data-nav="articles">Artiklar & intervju</a>
+        <a href="modell.html" data-nav="model">Modellen</a>
+        <a href="bevisdatabas.html" data-nav="database">Bevisdatabas</a>
+        <a href="skada.html" data-nav="damage">Skada</a>
+        <a href="juridik.html" data-nav="legal">Juridik</a>
       </div>
       <div class="nav-secondary" aria-label="På den här sidan">
-        <a href="#resan">Resan</a>
-        <a href="#levande-anmalan">Levande anmälan</a>
-        <a href="#huvudfragan">Vad BT visste</a>
-        <a href="#visuell-bevisning">Bildbevis</a>
-        <a href="#artikelbage">Artikelbågen</a>
-        <a href="#bevismatris">Beviskedjan</a>
-        <a href="#riskmodellen">Affärsmodellen</a>
-        <a href="#varfor">Spridning</a>
-        <a href="#tidslinje">Tidslinje</a>
+        <a href="#resan">Visuell resa</a>
+        <a href="#ingangar">Välj spår</a>
+        <a href="#bevisbilder">Bildbevis</a>
       </div>
     </nav>
   </header>
@@ -74,33 +66,24 @@
   <main id="top">
     <section class="hero">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Dokumentredovisning · ärende 5000-K613147-26 · yrkande 50 miljoner kronor</p>
-        <h1>Ett redaktionellt haveri.<br><em>Med dokumenterad livsskada.</em></h1>
+        <p class="eyebrow">Levande digital dokumentation · ärende 5000-K613147-26 · yrkande 50 miljoner kronor</p>
+        <h1>En lokal publicering.<br><em>En livslång digital skada.</em></h1>
         <p class="hero-intro">
-          Det här är större än en produkt eller ett bolag. Det handlar om hur en lokal tidning,
-          inom det svenska mediestödssystemet, enligt dokumentationen fick omfattande motbevis
-          men ändå lät en personligt skadlig berättelse stå kvar. eRocket var den
-          innovationsrika tillgång som förstördes: det visar
-          <a class="wiki-link" href="bevisdatabas.html#p-001">produktdata</a>,
-          <a class="wiki-link" href="bevisdatabas.html#a-001">avtal</a>,
-          <a class="wiki-link" href="bevisdatabas.html#f-001">fakturor</a>
-          och leveranser. Frågan är hur Borås Tidning kunde fortsätta framställa William Rydh
-          som ansiktet för ett lurande efter att redaktionen fått motbevisen,
-          <a class="wiki-link" href="bevisdatabas.html#sp-003">ansvarskedjan</a>
-          och <a class="wiki-link" href="bevisdatabas.html#i-001">en uttrycklig varning om följderna</a>.
+          Det här är ingången till bevisningen om hur William Rydh, eRocket och Nordic Digitalization
+          enligt dokumentationen porträtterades felaktigt av Borås Tidning. Startsidan är avsiktligt
+          kort: följ resan visuellt och gå sedan vidare till artiklarna, tidslinjen, fullarkivet,
+          skadeunderlagen eller den juridiska dokumentationen.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="#resan">Följ den digitala resan</a>
-          <a class="button secondary" href="#huvudfragan">Se vad BT visste</a>
-          <a class="button secondary" href="#snabbgranskning">Granska beviskedjan</a>
-          <a class="button secondary" href="bevisdatabas.html">Öppna bevisdatabasen</a>
+          <a class="button primary" href="#resan">Följ den visuella resan</a>
           <a class="button secondary" href="artiklar.html">Se artiklarna motbevisas</a>
+          <a class="button secondary" href="bevisdatabas.html">Öppna alla bevis</a>
         </div>
       </div>
-      <aside class="hero-case reveal" aria-label="Publicerad uppgift och dokumenterad motbild">
+      <aside class="hero-case reveal" aria-label="Kärnan i dokumentationen">
         <span class="case-label">Kärnan</span>
-        <blockquote>Jag bjöd in reportrarna till kontoret för att visa verkligheten. De byggde ändå en annan berättelse.</blockquote>
-        <p>Det dokumenterade problemet är inte bara reporterns formulering. Det är att bevis, mejl och invändningar enligt William skickades tillbaka till samma reportrar i stället för att ansvarig utgivare och redaktionell ledning bröt förloppet.</p>
+        <blockquote>Bevisningen pekar på en verklig tjänst, en prestationsmodell och en redaktionell bild som blev personligt förödande.</blockquote>
+        <p>Detta är inte en sida om ett mysterium. Det är en dokumenterad motbild till en offentlig berättelse som enligt William fortsätter skada förtroende, uppdrag och livsmöjligheter.</p>
         <div class="case-status">
           <span class="status disputed">Yrkande</span>
           <span>50 miljoner kronor i dokumenterad skada</span>
@@ -108,54 +91,54 @@
       </aside>
     </section>
 
-    <section class="story-journey section-shell" id="resan" aria-label="Digital resa genom dokumentationen">
+    <section class="story-journey section-shell" id="resan" aria-label="Visuell resa genom dokumentationen">
       <div class="section-heading reveal">
         <p class="eyebrow">Visuell resa</p>
-        <h2>Se flödet: från livsverk till publicerad skadebild.</h2>
-        <p>Sex nedslag. Bilder först, kort kontext efteråt. Varje kort går vidare till underlaget.</p>
+        <h2>Sex bilder som förklarar vad som står på spel.</h2>
+        <p>Bilder först. Kort kontext. Klicka vidare när du vill kontrollera underlaget.</p>
       </div>
-      <div class="journey-map" aria-label="Sex steg genom händelseförloppet">
+      <div class="journey-map" aria-label="Sex visuella nedslag">
         <article class="journey-step reveal">
-          <a class="journey-image" href="#artikelbage"><img src="assets/bt-30-miljoner.png" alt="BT-bildtext om investering runt 30 miljoner i eRocket" loading="lazy"></a>
-          <span>01 · Före drevet</span>
+          <a class="journey-image" href="tidslinje.html#fore"><img src="assets/bt-30-miljoner.png" alt="BT-bildtext om investering runt 30 miljoner i eRocket" loading="lazy"></a>
+          <span>01 · Livsverket</span>
           <h3>En verklig satsning</h3>
-          <p>Investering, team, produkt och ett etablerat digitalt renommé.</p>
-          <a class="journey-link" href="#artikelbage">Se artikelbågen</a>
+          <p>Investering, team, produkt och ett digitalt renommé.</p>
+          <a class="journey-link" href="tidslinje.html#fore">Börja i tidslinjen</a>
         </article>
         <article class="journey-step reveal">
-          <a class="journey-image" href="bevisdatabas.html#ark-024"><img src="assets/prestationsbaserad-riskfri-modell.png" alt="Markerad text om prestationsbaserad modell och att kunden inte betalar i förskott" loading="lazy"></a>
+          <a class="journey-image" href="modell.html#riskmodellen"><img src="assets/prestationsbaserad-riskfri-modell.png" alt="Markerad text om prestationsbaserad modell" loading="lazy"></a>
           <span>02 · Modellen</span>
           <h3>Syns du inte, betalar du inte</h3>
-          <p>Kärnan var att flytta risken från kunden till leverantören.</p>
-          <a class="journey-link" href="#riskmodellen">Se affärsmodellen</a>
+          <p>Kunden skulle inte bära resultatrisken.</p>
+          <a class="journey-link" href="modell.html#riskmodellen">Förstå modellen</a>
         </article>
         <article class="journey-step reveal">
-          <a class="journey-image" href="bevisdatabas.html#p-001"><img src="assets/erocket-dashboard.png" alt="eRocket-dashboard med kampanjer, sökord och Google-förändring" loading="lazy"></a>
+          <a class="journey-image" href="modell.html#produkt"><img src="assets/erocket-dashboard.png" alt="eRocket-dashboard med kampanjer och Google-förändring" loading="lazy"></a>
           <span>03 · Produkten</span>
           <h3>Dashboard och leverans</h3>
           <p>Kampanjer, sökord och Google-förändring gick att granska.</p>
-          <a class="journey-link" href="artiklar.html#intervjutidskoder">Lyssna på intervjun</a>
+          <a class="journey-link" href="modell.html#produkt">Se produktspåret</a>
         </article>
         <article class="journey-step reveal">
           <a class="journey-image" href="bevisdatabas.html#ark-018"><img src="assets/google-rankingar-feb-nov-2022.png" alt="Sammanställning av ökade Google-placeringar februari till november 2022" loading="lazy"></a>
-          <span>04 · Prestationen</span>
-          <h3>Google-resultaten fanns</h3>
-          <p>Bevisningen visar synlighet och mätbar prestation, inte en tom kuliss.</p>
-          <a class="journey-link" href="bevisdatabas.html#ark-018">Öppna rankingbilden</a>
+          <span>04 · Resultaten</span>
+          <h3>Google-prestationen fanns</h3>
+          <p>Synlighet och mätbar prestation, inte en tom kuliss.</p>
+          <a class="journey-link" href="bevisdatabas.html#ark-018">Öppna bilden</a>
         </article>
         <article class="journey-step reveal">
-          <a class="journey-image" href="bevisdatabas.html#ark-041"><img src="assets/muna-skickade-avtalen.png" alt="Skärmdump som visar att Muna skickat ut avtal själv" loading="lazy"></a>
-          <span>05 · Säljledet</span>
-          <h3>Avtalsflödet pekar vidare</h3>
-          <p>Underlagen visar en extern säljkedja och vem som skickade avtal.</p>
-          <a class="journey-link" href="bevisdatabas.html#alla-filer">Granska fullarkivet</a>
+          <a class="journey-image" href="artiklar.html#intervju"><img src="assets/muna-skickade-avtalen.png" alt="Skärmdump som visar att Muna skickat ut avtal själv" loading="lazy"></a>
+          <span>05 · Motbilden</span>
+          <h3>Avtal, säljled och intervju</h3>
+          <p>Underlagen pekar på en större ansvarskedja än den publicerade bilden.</p>
+          <a class="journey-link" href="artiklar.html#intervjutidskoder">Lyssna på intervjun</a>
         </article>
         <article class="journey-step damage reveal">
-          <a class="journey-image" href="bevisdatabas.html#sp-001"><img src="assets/reco-eric-oscar-t.png" alt="Reco-omdöme med länkar till BT:s artiklar" loading="lazy"></a>
+          <a class="journey-image" href="skada.html#spridning"><img src="assets/reco-eric-oscar-t.png" alt="Reco-omdöme med länkar till BT:s artiklar" loading="lazy"></a>
           <span>06 · Följden</span>
-          <h3>Förtroendet angreps</h3>
-          <p>BT:s berättelse blev ett verktyg som följde William långt efter publiceringen.</p>
-          <a class="journey-link" href="#tidslinje">Se följderna</a>
+          <h3>Skadan fortsatte digitalt</h3>
+          <p>BT:s berättelse användes vidare och följde William efter publiceringen.</p>
+          <a class="journey-link" href="skada.html">Se skadan</a>
         </article>
       </div>
       <aside class="journey-thesis reveal">
@@ -164,692 +147,81 @@
       </aside>
     </section>
 
-    <section class="disclosure" aria-label="Viktig information">
-      <strong>Detta är inte bara ett eRocket-ärende.</strong>
-      Det är en dokumentation av ett redaktionellt ansvarshaveri: vad reportrarna fick veta,
-      vad chefer och ansvarig utgivare därefter informerades om, vad som ändå fick ligga kvar
-      och hur publiceringarna enligt skadeunderlagen slog sönder ett livsverk.
-    </section>
-
-    <section class="living-report section-shell" id="levande-anmalan" aria-label="Levande digital anmälan">
-      <div>
-        <p class="eyebrow">Levande digital anmälan</p>
-        <h2>Om systemet inte bär sanningen, ska dokumentationen göra det.</h2>
-      </div>
-      <div class="living-report-copy">
-        <p>Den här webbplatsen är en levande, digital dokumentation av den ingivna polisanmälan, kompletteringarna och bevisningen. Den ersätter inte myndighetens ärende, men den gör beviskedjan tillgänglig, verifierbar och svår att tysta eller glömma.</p>
-        <p>Om ingen instans driver saken hela vägen, ligger materialet ändå kvar: artiklarna, intervjun, avtalen, fakturorna, produktdatan, skadeunderlagen och integritetsankarna. Det är syftet med sidan. Sanningen ska kunna granskas även när processen stannar.</p>
-      </div>
-      <div class="living-report-badges" aria-label="Dokumentationens status">
-        <span>Ärende 5000-K613147-26</span>
-        <span>81 bevisfiler</span>
-        <span>16 BT-publiceringar</span>
-        <span>Hashad beviskedja</span>
-      </div>
-    </section>
-
-    <section class="invitation-section section-shell" id="inbjudan">
+    <section class="route-section section-shell" id="ingangar" aria-label="Välj spår i dokumentationen">
       <div class="section-heading reveal">
-        <p class="eyebrow">Startpunkten</p>
-        <h2>William bjöd in reportrarna för att motbevisa deras premiss.</h2>
-        <p>Inför den första artikeln kom frågor om en påstådd mardröm på arbetsplatsen. William svarade inte genom att gömma sig. Han bjöd in reportrarna till kontoret, med anställda på plats, för att visa verksamheten, teamet, produkten och sammanhanget. Det är centralt: kontakten började med öppenhet, inte undvikande.</p>
+        <p class="eyebrow">Välj spår</p>
+        <h2>En stor bevismassa behöver flera dörrar in.</h2>
+        <p>Startsidan är kartan. Välj det spår som bäst svarar på frågan du har.</p>
       </div>
-      <div class="invitation-grid">
-        <article class="reveal">
+      <div class="route-grid">
+        <a class="route-card reveal" href="tidslinje.html">
           <span>01</span>
-          <h3>Reportrarna fick komma in</h3>
-          <p>Kontoret, personalen, produkten och den faktiska arbetsmiljön skulle kunna kontrolleras på plats.</p>
-        </article>
-        <article class="reveal">
+          <h3>Tidslinjen</h3>
+          <p>Före-bilden, intervjun, publiceringarna, följderna och processen.</p>
+        </a>
+        <a class="route-card reveal" href="artiklar.html">
           <span>02</span>
-          <h3>Intervjun blev ett motbevis</h3>
-          <p>Under den oklippta intervjun förklaras modellen, kundflödet, den externa försäljningen och risken för en felaktig publicering.</p>
-        </article>
-        <article class="reveal">
+          <h3>Artiklar & intervju</h3>
+          <p>BT:s centrala formuleringar kopplas till originalljud och motbevis.</p>
+        </a>
+        <a class="route-card reveal" href="modell.html">
           <span>03</span>
-          <h3>Ledningen fick invändningarna</h3>
-          <p>Efter publiceringarna skickades bevis, mejl och rättelseinvändningar. Dokumentationen gör gällande att materialet inte stoppade eller rättade berättelsen.</p>
-        </article>
+          <h3>eRocket-modellen</h3>
+          <p>Varför tjänsten var byggd för att kunden inte skulle betala före prestation.</p>
+        </a>
+        <a class="route-card reveal" href="bevisdatabas.html">
+          <span>04</span>
+          <h3>Bevisdatabasen</h3>
+          <p>Alla kuraterade bevisposter och 81 klickbara filer i fullarkivet.</p>
+        </a>
+        <a class="route-card reveal" href="skada.html">
+          <span>05</span>
+          <h3>Skada & värde</h3>
+          <p>Värdering, inkomstfall, konkurser, Reco-spridning och 50-miljonersyrkandet.</p>
+        </a>
+        <a class="route-card reveal" href="juridik.html">
+          <span>06</span>
+          <h3>Juridisk dokumentation</h3>
+          <p>Polisanmälan, kompletteringar, JK-beslut, enskilt åtal och ansvarskedja.</p>
+        </a>
       </div>
     </section>
 
-    <section class="article-arc section-shell" id="artikelbage">
+    <section class="visual-proof section-shell" id="bevisbilder">
       <div class="section-heading reveal">
-        <p class="eyebrow">BT:s egen artikelhistorik</p>
-        <h2>Före november 2022 var William en digital entreprenör i BT. Sedan ändrades ramen.</h2>
-        <p>Genomgången av <a class="wiki-link" href="bevisdatabas.html#bt-2014-2019">BT:s 16 sökträffar på "William Rydh"</a> visar ett tydligt före-och-efter. Samma digitala kompetens, samma Viskaholmsmiljö och samma entreprenöriella sammanhang som tidigare beskrevs legitimt blir från 19 november 2022 ramen för en personligt skadlig berättelse.</p>
-      </div>
-
-      <div class="arc-track" aria-label="Artikelbåge från positivt sammanhang till negativ ram">
-        <article class="arc-card before reveal">
-          <span>13 juni 2014</span>
-          <h3>Digitalt samhällsinitiativ</h3>
-          <p>BT skriver om ett antirasistiskt sajtprojekt där William framställs som digital initiativtagare med stort genomslag.</p>
-        </article>
-        <article class="arc-card before reveal">
-          <span>22 februari 2018</span>
-          <h3>Branschperson inom ärlig reklam</h3>
-          <p>I näringslivsmaterial om reklam, transparens och marknadsföring förekommer William och Adwise i ett legitimt expert- och företagsbyggarsammanhang.</p>
-        </article>
-        <article class="arc-card before reveal">
-          <span>21 maj 2019</span>
-          <h3>Digital specialistbyrå i Viskaholm</h3>
-          <p>BT beskriver Adwise som digital specialistbyrå i nyrenoverade Viskaholmslokaler. Samma miljö används senare i en helt annan berättelse.</p>
-        </article>
-        <article class="arc-card pivot reveal">
-          <span>19 november 2022</span>
-          <h3>Brytpunkten: entreprenören blir varningen</h3>
-          <p>Artikeln om "mardröm" och "klorna" etablerar en ny ram: William, Google/SEO, eRocket och kontoret kopplas till lurande och grundlurade kunder.</p>
-        </article>
-        <article class="arc-card after reveal">
-          <span>4-14 december 2022</span>
-          <h3>Ramen förstärks och sprids</h3>
-          <p>Uppföljningarna använder teman som "jagas", "hotas", "kritiserade" och "bluffsida". Berättelsen flyttas även till Moderaterna och Adwisemedia.</p>
-        </article>
-        <article class="arc-card after reveal">
-          <span>april-maj 2024</span>
-          <h3>Den negativa identiteten återanvänds</h3>
-          <p>I konkursrapporteringen blir "granskade företagaren" en etikett. 2022 års berättelse fungerar då som bakgrundsidentitet, inte som en avslutad publicering.</p>
-        </article>
-      </div>
-
-      <aside class="arc-verdict reveal">
-        <span>Varför detta spelar roll</span>
-        <p>Skadan ligger inte bara i en rubrik. BT byggde en ny offentlig identitet åt William och fortsatte därefter använda den som tolkningsram. Det stärker både utpekandet, personskadan och sambandet mellan publiceringarna och det efterföljande förtroenderaset.</p>
-      </aside>
-    </section>
-
-    <section class="core-case-section" id="huvudfragan">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Huvudfrågan</p>
-        <h2>Det dokumenterade problemet är vad tidningen gjorde efter att den fått veta helheten</h2>
-          <p>Leveransen är bara en del. Det allvarliga ligger i ansvarskedjan: reportrar, redaktionell ledning, ansvarig utgivare, uteblivna rättelser och fortsatt spridning.</p>
-        </div>
-        <div class="editorial-sequence">
-          <article class="reveal">
-            <span>01 · Modellen förklarades</span>
-            <h3>Innovationen var konstruerad för att kunden inte skulle betala före verifierad synlighet</h3>
-            <p>Kunden valde sökfraser. eRocket producerade och arbetade med synligheten. <a class="wiki-link" href="bevisdatabas.html#f-001">Faktura uppstod först när de avtalade fraserna nådde topp 10 på Google</a>.</p>
-          </article>
-          <article class="reveal">
-            <span>02 · Motbevisen fanns</span>
-            <h3>Redaktionen fick originalljudets sammanhang, ansvarskedjan och uppgifterna om vidtagna åtgärder</h3>
-            <p>Under den <a class="wiki-link" href="bevisdatabas.html#i-001">oklippta intervjun</a> förklarades prestationsmodellen, den <a class="wiki-link" href="bevisdatabas.html#sp-003">externa försäljningen</a>, kundkontrollen och risken att en felaktig artikel skulle förstöra namn och verksamhet.</p>
-          </article>
-          <article class="reveal">
-            <span>03 · Lurandepåståendet publicerades</span>
-            <h3>Trots detta gav artikelserien läsaren bilden att William personligen lurade kunder</h3>
-            <p>Avgörande motuppgifter fick inte motsvarande plats. Ett varningsuttalande om tidningens möjliga missförstånd användes i stället som rubrikcitat.</p>
-          </article>
-          <article class="reveal">
-            <span>04 · Invändningarna ändrade inte bilden</span>
-            <h3>William protesterade omedelbart, men den skadliga framställningen blev bestående</h3>
-            <p>Rättelsemejl och fortsatt korrespondens dokumenterar att redaktionen och ansvarig utgivare informerades om felen och konsekvenserna efter publiceringen.</p>
-          </article>
-        </div>
-        <aside class="core-verdict reveal">
-          <span>Vad läsaren behöver förstå</span>
-          <p>Detta är inte främst en tvist om huruvida en tjänst levererades. Det är en dokumenterad redogörelse för hur en lokal tidning fick omfattande motbevis, ändå publicerade ett personligt lurandepåstående och sedan lät samma bild bestå trots omedelbara invändningar.</p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="numbers section-shell" aria-label="Materialets omfattning">
-      <article>
-        <strong>81</strong>
-        <span>filer i den samlade dokumentleveransen</span>
-      </article>
-      <article>
-        <strong>2:03</strong>
-        <span>timmar oklippt intervju med tidskoder</span>
-      </article>
-      <article>
-        <strong>18</strong>
-        <span>separata teser i den reviderade bevismatrisen</span>
-      </article>
-      <article>
-        <strong>5</strong>
-        <span>samverkande bevislinjer som motsäger lurandepåståendet</span>
-      </article>
-    </section>
-
-    <section class="database-teaser section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Bevisdatabas</p>
-        <h2>Alla centrala handlingar samlade som ett sökbart uppslagsverk</h2>
-        <p>Databasen är byggd för den läsare som vill kontrollera materialet själv: vad handlingen är, vad den visar, vilket BT-påstående den bemöter och vilken fil som styrker det.</p>
-      </div>
-      <a class="button primary reveal" href="bevisdatabas.html">Gå till bevisdatabasen</a>
-    </section>
-
-    <section class="database-teaser section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Artikel för artikel</p>
-        <h2>BT:s påståenden kan läsas mot originalljud, avtal och fakturor</h2>
-        <p>Den nya artikelgenomgången visar korta BT-formuleringar och kopplar varje bärande påstående till motbevis: intervju, BankID-avtal, prestationsfakturor, dashboard, extern säljkedja och skadeunderlag.</p>
-      </div>
-      <a class="button primary reveal" href="artiklar.html">Öppna artikelgenomgången</a>
-    </section>
-
-    <section class="visual-proof section-shell" id="visuell-bevisning">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Visuell bevisning</p>
-        <h2>Det här ska kunna förstås med ögonen först.</h2>
-        <p>De centrala bilderna visar flödet: investering och omfattning, faktisk produkt, mätbar Google-prestation, avtalsflöde, prestationsbaserad modell och senare spridning av BT:s berättelse.</p>
+        <p class="eyebrow">Bevisbilder</p>
+        <h2>Det centrala ska kunna förstås med ögonen först.</h2>
+        <p>Det här är bara ett urval. Hela materialet ligger i bevisdatabasen.</p>
       </div>
       <div class="visual-proof-grid">
         <figure class="visual-card large reveal">
-          <a href="bevisdatabas.html#p-001"><img src="assets/erocket-dashboard.png" alt="eRocket-dashboard med kampanjer, sökord och Google-förändring" loading="lazy"></a>
+          <a href="modell.html#produkt"><img src="assets/erocket-dashboard.png" alt="eRocket-dashboard med kampanjer, sökord och Google-förändring" loading="lazy"></a>
           <figcaption><strong>Produkt och leverans</strong><span>Dashboarden visar kampanjer, sökord och mätbar Google-förändring.</span></figcaption>
         </figure>
         <figure class="visual-card reveal">
-          <a href="bevisdatabas.html#ark-018"><img src="assets/google-rankingar-feb-nov-2022.png" alt="Sammanställning av ökade Google-placeringar februari till november 2022" loading="lazy"></a>
+          <a href="bevisdatabas.html#ark-018"><img src="assets/google-rankingar-feb-nov-2022.png" alt="Sammanställning av ökade Google-placeringar" loading="lazy"></a>
           <figcaption><strong>Prestation</strong><span>Samlad bild över ökade placeringar på Google.</span></figcaption>
         </figure>
         <figure class="visual-card reveal">
-          <a href="bevisdatabas.html#ark-016"><img src="assets/bt-30-miljoner.png" alt="BT-bildtext om investering runt 30 miljoner i eRocket" loading="lazy"></a>
-          <figcaption><strong>Omfattning</strong><span>Publicerad kontext om investering och kommersiell satsning.</span></figcaption>
+          <a href="bevisdatabas.html#ark-024"><img src="assets/prestationsbaserad-riskfri-modell.png" alt="Prestationsbaserad modell" loading="lazy"></a>
+          <figcaption><strong>Riskmodellen</strong><span>Kunden betalade efter dokumenterad synlighet.</span></figcaption>
         </figure>
         <figure class="visual-card reveal">
-          <a href="bevisdatabas.html#ark-041"><img src="assets/muna-skickade-avtalen.png" alt="Skärmdump som visar att Muna skickat ut avtal själv" loading="lazy"></a>
+          <a href="bevisdatabas.html#ark-041"><img src="assets/muna-skickade-avtalen.png" alt="Avtalsflöde" loading="lazy"></a>
           <figcaption><strong>Avtalsflöde</strong><span>Underlag om vem som skickade avtal och hur kunden fick materialet.</span></figcaption>
         </figure>
-        <figure class="visual-card reveal">
-          <a href="bevisdatabas.html#ark-024"><img src="assets/prestationsbaserad-riskfri-modell.png" alt="Markerad text om prestationsbaserad modell och att kunden inte betalar i förskott" loading="lazy"></a>
-          <figcaption><strong>Riskmodellen</strong><span>Texten visar kärnan: kunden betalade efter dokumenterad synlighet.</span></figcaption>
-        </figure>
         <figure class="visual-card large reveal">
-          <a href="bevisdatabas.html#sp-001"><img src="assets/reco-eric-oscar-t.png" alt="Reco-omdöme med länkar till BT:s artiklar" loading="lazy"></a>
+          <a href="skada.html#spridning"><img src="assets/reco-eric-oscar-t.png" alt="Reco-omdöme med länkar till BT:s artiklar" loading="lazy"></a>
           <figcaption><strong>Spridning</strong><span>BT:s publiceringar användes senare för att angripa förtroendet på Reco.</span></figcaption>
         </figure>
-      </div>
-    </section>
-
-    <section class="evidence-mass section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Inte påstående mot påstående</p>
-        <h2>En sammanhängande bevismassa på 81 filer</h2>
-        <p>Varje lager bekräftar de andra. Originalljudet visar vad BT visste. Avtalen och fakturorna visar vad som såldes och när betalning uppstod. Produktdatan visar leveransen. Korrespondensen visar invändningarna. Skadeunderlagen visar följderna.</p>
-      </div>
-      <div class="mass-layout">
-        <div class="mass-stack reveal" aria-label="Bevismaterial fördelat på fem lager">
-          <article style="--share: 19">
-            <strong>19</strong><span>transkriberingar, tidskoder och kontrollavsnitt</span>
-          </article>
-          <article style="--share: 28">
-            <strong>28</strong><span>avtal, fakturor, produktdata och artikelutdrag</span>
-          </article>
-          <article style="--share: 15">
-            <strong>15</strong><span>kompletteringar, bevispromemorior och särskilda bilagor</span>
-          </article>
-          <article style="--share: 13">
-            <strong>13</strong><span>juridiska analyser och sammanhållna beviskedjor</span>
-          </article>
-          <article style="--share: 5">
-            <strong>5</strong><span>ursprunglig anmälan, korrespondens och integritetskontroller</span>
-          </article>
-        </div>
-        <aside class="mass-verdict reveal">
-          <span>Vad massan visar</span>
-          <blockquote>Materialet visar inte att William lurade kunder. Det visar ett innovationsprojekt, avtalad prestation, leverans, leverantörsburen risk och en dokumenterad extern försäljningskedja.</blockquote>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section-shell intro-grid" id="snabbgranskning">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Publicerad uppgift jämförd med dokument</p>
-        <h2>Fem kontrollpunkter som visar vad redaktionen visste</h2>
-        <p>Varje punkt kan kontrolleras mot bevarade handlingar och originalljud från tiden före publiceringen.</p>
-      </div>
-
-      <div class="review-path">
-        <article class="review-card reveal">
-          <span class="review-number">01</span>
-          <div>
-            <p class="card-kicker">Originalljud · dokumenterat</p>
-            <h3>Citatet handlade om BT:s risk att missförstå</h3>
-            <p>I den oklippta intervjun avser uttrycket risken att <em>Borås Tidning</em> skulle missförstå verksamheten och skriva en skadlig artikel. Rubriken fick det att framstå som något helt annat.</p>
-            <button class="text-button evidence-jump" data-target="quote-context">Visa tidskod och kontext</button>
-          </div>
-        </article>
-        <article class="review-card reveal">
-          <span class="review-number">02</span>
-          <div>
-            <p class="card-kicker">Avtal + fakturor · dokumenterat</p>
-            <h3>Fakturering var knuten till uppmätt prestation</h3>
-            <p>BankID-avtal och fakturor visar modellen: fakturering knöts till att avtalade sökfraser nådde topp 10 på Google.</p>
-            <button class="text-button evidence-jump" data-target="performance-model">Visa vad underlagen stödjer</button>
-          </div>
-        </article>
-        <article class="review-card reveal">
-          <span class="review-number">03</span>
-          <div>
-            <p class="card-kicker">Produktdata · dokumenterat</p>
-            <h3>eRocket var en faktisk produkt med mätbara leveranser</h3>
-            <p>Dashboard, kampanjer, sökord och mätbara rankingförändringar visar en fungerande tjänst med faktiska leveranser.</p>
-            <button class="text-button evidence-jump" data-target="real-product">Se produktspåret</button>
-          </div>
-        </article>
-        <article class="review-card reveal">
-          <span class="review-number">04</span>
-          <div>
-            <p class="card-kicker">Fakturor · dokumenterat</p>
-            <h3>Den tidiga försäljningen sköttes av en extern aktör</h3>
-            <p>Fyra betalda provisionsfakturor och samtida dokument visar att en extern aktör skötte den tidiga försäljningen och kundkontakten.</p>
-            <button class="text-button evidence-jump" data-target="external-sales">Se ansvarsfördelningen</button>
-          </div>
-        </article>
-        <article class="review-card reveal">
-          <span class="review-number">05</span>
-          <div>
-            <p class="card-kicker">Intervju + e-post · dokumenterat</p>
-            <h3>Redaktionen hade motuppgifterna före publicering</h3>
-            <p>Redaktionen fick höra om prestationsmodellen, leveransen, den externa aktören, vidtagna åtgärder och den förutsägbara personliga skadan.</p>
-            <button class="text-button evidence-jump" data-target="prior-knowledge">Se vad redaktionen informerades om</button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="quote-section" id="quote-context">
-      <div class="section-shell">
-        <div class="section-heading light reveal">
-          <p class="eyebrow">Citatets dokumenterade sammanhang</p>
-          <h2>Rubriken och originalljudet förmedlar olika betydelser</h2>
-        </div>
-        <div class="quote-comparison">
-          <article class="quote-panel published reveal">
-            <span>Rubrikens sammanställning</span>
-            <blockquote>”Så lurar Boråsföretaget sina kunder: ‘Har missförstått hela skiten’”</blockquote>
-            <p>Sammanställningen får Williams ord att framstå som ett arrogant avfärdande av kunder.</p>
-          </article>
-          <div class="versus" aria-hidden="true">mot</div>
-          <article class="quote-panel source reveal">
-            <span>Originalljud · 01:10:32–01:10:46</span>
-            <blockquote>”Det är därför vi upplever att det finns en risk här att Borås Tidning kommer hit, missförstått hela skiten, skriver en jävla skitartikel om oss...”</blockquote>
-            <p>Originalljudet visar att William varnade för att tidningen skulle missförstå helheten och förstöra verksamheten.</p>
-          </article>
-        </div>
-        <p class="source-note">Källa: den oklippta intervjun den 16 november 2022, bevarad med tidskod och filhash.</p>
-      </div>
-    </section>
-
-    <section class="section-shell" id="performance-model">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Affärsmodellen</p>
-        <h2>”Syns du inte, betalar du inte” visar vem som bar risken</h2>
-        <p>eRocket flyttade risken från kunden till leverantören. Produkten byggdes först, synligheten mättes och faktura skapades när avtalad prestation uppnåddes.</p>
-      </div>
-      <div class="model-grid">
-        <article class="model-step reveal">
-          <span>1</span>
-          <h3>Webbplats produceras</h3>
-          <p>eRocket beskrivs som webbplats, hosting, domän, SEO och rapportering.</p>
-        </article>
-        <article class="model-step reveal">
-          <span>2</span>
-          <h3>Sökfraser mäts</h3>
-          <p>Google-data används för att följa avtalade sökfrasers placering.</p>
-        </article>
-        <article class="model-step reveal">
-          <span>3</span>
-          <h3>Faktura vid topp 10</h3>
-          <p>Individuella avtal och fakturaexempel knyter betalning till uppnådd placering.</p>
-        </article>
-      </div>
-      <aside class="precision-box reveal">
-        <strong>Slutsats</strong>
-        <p>Avtalen och fakturorna visar att kunderna inte betalade för enbart ett löfte. Ersättningen var kopplad till dokumenterad Google-synlighet.</p>
-      </aside>
-    </section>
-
-    <section class="risk-model-section" id="riskmodellen">
-      <div class="section-shell">
-        <div class="section-heading light reveal">
-          <p class="eyebrow">Riskfördelningen</p>
-        <h2>Projektet vände på byråbranschens normala riskfördelning</h2>
-          <p>Skillnaden mot en traditionell byråmodell framgår av avtal, fakturor och den oklippta intervjun. Kunden fick en producerad och förvaltad leverans. Betalning uppstod först när avtalade sökfraser nådde topp 10 på Google.</p>
-        </div>
-
-        <div class="risk-comparison">
-          <article class="risk-card conventional reveal">
-            <span>Vanlig byråmodell</span>
-            <h3>Kunden betalar för arbetet och bär resultatrisken</h3>
-            <ul>
-              <li>Webbproduktion och SEO faktureras som arbete eller projekt.</li>
-              <li>Leverantören får betalt även om önskad Google-placering uteblir.</li>
-              <li>Kunden tar den ekonomiska risken för det slutliga utfallet.</li>
-            </ul>
-          </article>
-          <article class="risk-card erocket reveal">
-            <span>eRockets dokumenterade modell</span>
-            <h3>Leverantören arbetar först och får betalt vid uppmätt resultat</h3>
-            <ul>
-              <li>Webbplats, hosting, domän, SEO och rapportering levererades.</li>
-              <li>Faktura knöts till topp-10-placering: 42 kronor per sökfras och synlig dag.</li>
-              <li>Utebliven avtalad placering innebar ingen faktura för leveransen.</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="risk-scale">
-          <article class="risk-share reveal">
-            <p class="eyebrow">Dokumenterad uppgift i intervjun</p>
-            <h3>Per 100 kunder fick omkring 29 en komplett leverans utan faktura</h3>
-            <div class="share-bar" aria-label="Illustration: 71 fakturerade efter prestation och 29 levererade utan faktura">
-              <span class="invoiced" style="width:71%">71 · faktura efter prestation</span>
-              <span class="unbilled" style="width:29%">29 · ingen faktura</span>
-            </div>
-            <p>Vid 00:29:59–00:30:30 och 01:01:14–01:03:17 beskriver William att omkring 29–30 procent inte fakturerades trots att bolaget bar kostnaderna för leveransen.</p>
-          </article>
-
-          <article class="value-scenarios reveal">
-            <p class="eyebrow">Illustrativ värdeskala per 100 kunder</p>
-            <h3>Vad 29 ofakturerade fulla leveranser motsvarar</h3>
-            <div class="scenario-grid">
-              <div><span>20 000 kr per leverans</span><strong>580 000 kr</strong></div>
-              <div><span>40 000 kr per leverans</span><strong>1 160 000 kr</strong></div>
-              <div><span>60 000 kr per leverans</span><strong>1 740 000 kr</strong></div>
-            </div>
-            <small>Beräkning: 29 leveranser × illustrativt jämförelsevärde. Scenarierna är inte ett bokfört belopp; de visar den ekonomiska storleksordningen av den dokumenterade riskfördelningen.</small>
-          </article>
-        </div>
-
-        <aside class="reader-conclusion reveal">
-          <span>Vem blev vilseledd?</span>
-          <p>Handlingarna visar att kunder fick en avtalad tjänst och att Nordic Digitalization bar risken när resultat uteblev. William och bolaget drabbades samtidigt av brister i den externa försäljningen. Den mest utbredda felaktiga bilden gavs därför till de läsare som saknade egen kännedom och förlitade sig på Borås Tidnings framställning.</p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="product-section" id="real-product">
-      <div class="section-shell product-grid">
-        <div class="product-copy reveal">
-          <p class="eyebrow">Produktspåret</p>
-          <h2>En dashboard med kampanjer, sökord och mätbar förändring</h2>
-          <p>Den bevarade översikten visar bland annat 128 prestationsbaserade kampanjer, 1 410 sökord och tiotusentals registrerade positionsförändringar.</p>
-          <ul class="check-list">
-            <li>Faktisk kundportal och kampanjstruktur</li>
-            <li>Separata sökord och rankingförändringar</li>
-            <li>Bevis för att en digital produkt levererades</li>
-          </ul>
-          <p class="verdict"><strong>Vad detta visar:</strong> Uppgiften om ett bluffupplägg är oförenlig med en produkt som byggde webbplatser, mätte sökord och skapade fakturor utifrån registrerad prestation.</p>
-        </div>
-        <figure class="evidence-figure reveal">
-          <img src="assets/erocket-dashboard.png" alt="Översikt i eRockets kundportal med kampanjer, sökord och registrerade Google-förändringar">
-          <figcaption><span class="status corroborated">Leveransbevis</span> Bevarad skärmbild från eRockets kundportal, daterad till perioden februari–oktober 2022.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section-shell" id="external-sales">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Försäljningskedjan</p>
-        <h2>Den dokumenterade ansvarskedjan skiljer försäljning från produktion</h2>
-        <p>Den tidiga försäljningen och kundkontakten sköttes genom en extern aktör. När felkommunikation upptäcktes tog Williams bolag över kontrollen, kontaktade kunder och avslutade samarbetet.</p>
-      </div>
-      <div class="chain reveal" aria-label="Dokumenterad ansvarskedja">
-        <article>
-          <span>Extern säljaktör</span>
-          <strong>Försäljning och kundkontakt</strong>
-          <small>Stöds av provisionsfakturor och samtida utkast</small>
-        </article>
-        <i aria-hidden="true">→</i>
-        <article>
-          <span>Nordic Digitalization</span>
-          <strong>Produktion och leverans</strong>
-          <small>Stöds av produkt-, avtals- och fakturaunderlag</small>
-        </article>
-        <i aria-hidden="true">→</i>
-        <article>
-          <span>När problem upptäcktes</span>
-          <strong>Intern kontroll och åtgärder</strong>
-          <small>Redovisat för reportrarna före publiceringen</small>
-        </article>
-      </div>
-      <div class="source-strip reveal">
-        <strong>Dokumenterad kärna:</strong>
-        betalda provisionsfakturor 61, 63, 70 och 71 avseende eRocket-affärer under februari–april 2022.
-      </div>
-    </section>
-
-    <section class="prior-section" id="prior-knowledge">
-      <div class="section-shell">
-        <div class="section-heading light reveal">
-          <p class="eyebrow">Före publiceringen</p>
-          <h2>Redaktionen hade tillgång till den dokumenterade motbilden</h2>
-        </div>
-        <div class="knowledge-grid">
-          <article class="reveal">
-            <time>00:07:30</time>
-            <h3>Faktura vid faktisk Google-data</h3>
-            <p>Prestationsmodellen förklaras direkt i intervjun.</p>
-          </article>
-          <article class="reveal">
-            <time>00:31:17</time>
-            <h3>Kontroll och åtgärder</h3>
-            <p>William beskriver kundkontakt, internisering och avslutat samarbete.</p>
-          </article>
-          <article class="reveal">
-            <time>00:48:02</time>
-            <h3>Varning om skadan</h3>
-            <p>Redaktionen varnas uttryckligen för ett missförstånd som kan skada namn och verksamhet.</p>
-          </article>
-          <article class="reveal">
-            <time>01:10:53</time>
-            <h3>Vilja att ange extern aktör</h3>
-            <p>William erbjuder namn och adress för vidare kontroll, samtidigt som han accepterar sitt vd-ansvar.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-shell why-section" id="varfor">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Dokumenterade aktörer och fortsatt spridning</p>
-        <h2>Förloppet omfattade flera separata aktörsled</h2>
-        <p>Dokumenten visar var den tidiga försäljningen låg, vilka redaktionella uppgifter som publicerades och hur artiklarna senare användes på bolagets betygssida.</p>
-      </div>
-
-      <div class="actor-chain">
-        <article class="actor-card reveal">
-          <span class="actor-index">01 · Ursprungliga kundproblem</span>
-          <h3>Den externa säljkedjan</h3>
-          <p><a class="wiki-link" href="bevisdatabas.html#sp-003">Betalda provisionsfakturor och offentliga bolagsuppgifter</a> visar att Empire of Sales i Borås AB var den externa säljaktör som fakturerade Nordic Digitalization för eRocket-affärer. Det är där de påstådda kundmissförstånden först måste granskas.</p>
-          <strong>BT fick veta att försäljningsledet var externt före publiceringen.</strong>
-        </article>
-        <article class="actor-card reveal">
-          <span class="actor-index">02 · Publiceringen</span>
-          <h3>Borås Tidnings framställning</h3>
-          <p>Reportrarna fick hela affärsmodellen, ansvarskedjan, leveransen, åtgärderna och skadevarningen. Ändå valde tidningen ett kategoriskt lurandepåstående och ett citat vars verkliga innebörd originalljudet motsäger.</p>
-          <strong>Publiceringen gjorde William personligen till bärare av lurandepåståendet.</strong>
-        </article>
-        <article class="actor-card reveal">
-          <span class="actor-index">03 · Fortsatt spridning</span>
-          <h3>Gota Media-kopplad fortsatt spridning på Reco</h3>
-          <p>Ett konto med namnet Eric Oscar T lämnade lägsta betyg på bolagets Reco-sida utan beskriven kundupplevelse och hänvisade enbart till två BT-artiklar. Samma dag presenterades Eric Thulin offentligt som redaktionell utvecklingschef på Gota Media.</p>
-          <strong>Artiklarna användes som grund för lägsta möjliga kundbetyg.</strong>
-        </article>
-      </div>
-
-      <div class="motive-grid">
-        <article class="motive-analysis reveal">
-          <p class="eyebrow">Var det bara ett missförstånd?</p>
-          <h3>Den förklaringen räcker inte efter den oklippta intervjun</h3>
-          <p>Under mer än två timmar fick redaktionen affärsmodellen, leveransen, den externa säljkedjan och Williams invändningar förklarade. Därefter publicerades ändå det kategoriska lurandepåståendet.</p>
-        </article>
-        <article class="motive-analysis reveal">
-          <p class="eyebrow">Vilka intressen fanns?</p>
-          <h3>Gota Media verkade samtidigt i samma digitala marknad som eRocket utmanade.</h3>
-          <p>eRocket sålde hemsida och Google-synlighet enligt en prestationsmodell. <a class="source-link" href="https://gotamedia.se/foretagsmarknad/" target="_blank" rel="noreferrer">Gota Medias egen företagsmarknad</a> erbjuder också hemsidor, SEO, SEM och Google-marknadsföring. Senare dokumenteras ett direkt agerande från en redaktionell utvecklingschef mot eRockets Reco-betyg.</p>
-        </article>
-        <article class="motive-analysis reveal">
-          <p class="eyebrow">Namngivet granskningsspår</p>
-          <h3>Empire of Sales, Nenad Krstic och senare Effektiv Media-spåret måste granskas.</h3>
-          <p>Offentliga bolagssidor anger Nenad Krstic som styrelseledamot/verklig huvudman i Empire of Sales i Borås AB, bolaget som enligt bevisningen fakturerade Nordic Digitalization för eRocket-försäljning. Offentliga LinkedIn-uppgifter kopplar honom även till Effektiv Media Group, som verkar inom digital marknadsföring, SEO och webb. Frågan är varför BT gjorde William till ansiktet för kundmissnöjet utan att ge den externa säljkedjan motsvarande granskning.</p>
-        </article>
-      </div>
-
-      <div class="reco-proof">
-        <figure class="evidence-figure reveal">
-          <img src="assets/reco-eric-oscar-t.png" alt="Enstjärnigt Reco-omdöme från Eric Oscar T som enbart hänvisar till Borås Tidnings artiklar">
-          <figcaption><span class="status disputed">Dokumenterad spridning</span> Lägsta betyg, ingen beskriven kundupplevelse och två länkar till BT:s artikelserie.</figcaption>
-        </figure>
-        <figure class="evidence-figure reveal">
-          <img src="assets/eric-thulin-gota-media.png" alt="LinkedIn-utdrag som visar Eric Thulin som redaktionell utvecklingschef på Gota Media">
-          <figcaption><span class="status disputed">Dokumenterad roll</span> LinkedIn-utdrag från samma dag visar Eric Thulin som redaktionell utvecklingschef på Gota Media.</figcaption>
-        </figure>
-      </div>
-
-      <aside class="why-verdict reveal">
-        <span>Samlad slutsats</span>
-        <p>Bevisningen visar en ansvarskedja: extern försäljning skapade de tidiga kundproblemen, William och bolaget fick bära följderna och publiceringen gav läsarna en ofullständig bild där lurandepåståendet knöts till William personligen.</p>
-      </aside>
-    </section>
-
-    <section class="section-shell economy-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Ekonomiskt sammanhang</p>
-        <h2>Ett verkligt värde byggdes upp. Därefter följde sammanbrottet.</h2>
-        <p>Före BT:s publicering fanns omsättning, positivt beräknat resultat, personal, kundfordringar och en färdig produkt. Efter publiceringarna följde förlorat förtroende, inkomstfall och konkurser.</p>
-      </div>
-      <div class="economy-grid">
-        <article class="finance-card reveal">
-          <span>Nordic Digitalization · rapport utskriven 31 oktober 2022</span>
-          <strong>3,98 mnkr</strong>
-          <p>redovisade intäkter</p>
-          <div class="mini-metrics">
-            <span><b>0,99 mnkr</b> beräknat resultat</span>
-            <span><b>1,13 mnkr</b> personalkostnader</span>
-          </div>
-        </article>
-        <article class="finance-card valuation reveal">
-          <span>Förkonkursvärdering · 18 januari 2024</span>
-          <strong>39,6–48,4 mnkr</strong>
-          <p>angivet värdeintervall för eRocket</p>
-          <div class="range" aria-label="Värdeintervall från 39,6 till 48,4 miljoner kronor">
-            <span style="left: 16%"></span><span style="left: 72%"></span>
-          </div>
-          <small>Värderingen upprättades mer än tre månader före konkurserna.</small>
-        </article>
-        <article class="finance-card reveal">
-          <span>Williams deklarerade tjänsteinkomst</span>
-          <div class="bar-chart" aria-label="Tjänsteinkomst per år">
-            <div><i style="height: 89%"></i><b>582k</b><span>2021</span></div>
-            <div><i style="height: 88%"></i><b>577k</b><span>2022</span></div>
-            <div><i style="height: 100%"></i><b>654k</b><span>2023</span></div>
-            <div><i style="height: 9%"></i><b>58k</b><span>2024</span></div>
-          </div>
-          <small>Det dokumenterade inkomstfallet visar den ekonomiska förändringen efter publiceringarna.</small>
-        </article>
-      </div>
-      <figure class="article-excerpt reveal">
-        <img src="assets/bt-30-miljoner.png" alt="Utdrag där Borås Tidning återger Williams uppgift om investeringen i eRocket">
-        <figcaption>BT kände till att eRocket var resultatet av en flerårig och kapitalkrävande satsning. Det är relevant vid bedömningen av uppgiften att verksamheten var en bluff.</figcaption>
-      </figure>
-    </section>
-
-    <section class="matrix-section" id="bevismatris">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Samlad beviskedja</p>
-          <h2>Tolv dokumenterade förhållanden som korrigerar artikelseriens bild</h2>
-          <p>Filtrera efter bevisets funktion. Varje kort visar vad dokumentet bevisar och varför det spelar roll.</p>
-        </div>
-        <div class="filter-bar reveal" role="group" aria-label="Filtrera beviskort">
-          <button class="filter active" data-filter="all">Alla</button>
-          <button class="filter" data-filter="documented">Direkta motbevis</button>
-          <button class="filter" data-filter="corroborated">Leverans och ansvar</button>
-          <button class="filter" data-filter="disputed">Publicerad uppgift</button>
-          <button class="filter" data-filter="open">Skadan</button>
-        </div>
-        <div class="evidence-grid" id="evidenceGrid"></div>
-      </div>
-    </section>
-
-    <section class="timeline-section" id="tidslinje">
-      <div class="section-shell">
-        <div class="section-heading light reveal">
-          <p class="eyebrow">Händelseförloppet</p>
-          <h2>Från utveckling till rättslig prövning</h2>
-        </div>
-        <ol class="timeline">
-          <li class="reveal"><time>2020–2021</time><div><h3>Utveckling och pilot</h3><p>Under cirka 18 månader utvecklades eRocket med ett helt team innan tjänsten gick ut brett på marknaden.</p></div></li>
-          <li class="reveal"><time>Feb 2022</time><div><h3>Kommersiell start</h3><p>eRocket går ut bredare. En extern aktör används i den tidiga försäljningen.</p></div></li>
-          <li class="reveal"><time>Feb–apr 2022</time><div><h3>Extern försäljningsfas</h3><p>Betalda provisionsfakturor dokumenterar eRocket-försäljning genom extern aktör.</p></div></li>
-          <li class="reveal"><time>31 okt 2022</time><div><h3>Ekonomisk rapport före publicering</h3><p>Rapporter visar faktisk omsättning, personal och positivt beräknat resultat.</p></div></li>
-          <li class="reveal featured"><time>16 nov 2022</time><div><h3>Oklippt intervju</h3><p>Över två timmar där William förklarar modellen, bestrider lurande och varnar för skadan av ett missförstånd.</p></div></li>
-          <li class="reveal featured"><time>19 nov 2022</time><div><h3>Publicering och omedelbar invändning</h3><p>Rubriken publiceras. William skickar rättelseinvändningar den 19–20 november.</p></div></li>
-          <li class="reveal"><time>28 jun 2023</time><div><h3>Artiklarna används på Reco</h3><p>En person i Gota Medias redaktionella ledning använder BT-länkar i ett enstjärnigt Reco-omdöme utan beskriven kundrelation.</p></div></li>
-          <li class="reveal"><time>18 jan 2024</time><div><h3>eRocket värderas före konkurserna</h3><p>En daterad värderingsrapport placerar eRocket i intervallet 39,6–48,4 miljoner kronor.</p></div></li>
-          <li class="reveal"><time>23 apr 2024</time><div><h3>Konkurser</h3><p>Nordic Digitalization, AWM och William Rydh Holding försätts i konkurs.</p></div></li>
-          <li class="reveal"><time>10 jun 2026</time><div><h3>JK avstår från allmänt åtal</h3><p>Beslutet avgör inte om förtal förekommit. Möjligheten till enskilt åtal kvarstår som separat fråga.</p></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section-shell conclusions">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Samlad slutsats</p>
-        <h2>Handlingarna visar ett dokumenterat innovationsprojekt, inte en bluff</h2>
-      </div>
-      <div class="conclusion-grid">
-        <article class="reveal">
-          <span class="status documented">Verksamheten</span>
-          <h3>Dokumenten visar vad bolaget faktiskt levererade</h3>
-          <ul>
-            <li>Originalljudet ger rubrikcitatet en annan kontext.</li>
-            <li>Produkt, avtal och prestationsfakturor existerar.</li>
-            <li>Extern försäljning dokumenteras av betalda fakturor.</li>
-            <li>Redaktionen fick omfattande motuppgifter före publicering.</li>
-          </ul>
-        </article>
-        <article class="reveal">
-          <span class="status disputed">Läsarnas bild</span>
-          <h3>Tidningens framställning utelämnade avgörande sammanhang</h3>
-          <ul>
-            <li>Rubrikcitatet gavs en annan innebörd än i originalljudet.</li>
-            <li>William personifierades som den som lurade kunder.</li>
-            <li>Avtal, leveransdata och extern försäljning gavs inte rättvisande vikt.</li>
-            <li>Läsare utan egen kännedom fick därför en felaktig bild av verksamheten.</li>
-          </ul>
-        </article>
-        <article class="reveal">
-          <span class="status open">Konsekvensen</span>
-          <h3>Publiceringen följdes av omfattande ekonomiska konsekvenser</h3>
-          <ul>
-            <li>Williams etablerade renommé och förtroendeuppdrag gick förlorade.</li>
-            <li>Inkomsten föll från 653 868 kronor till 58 140 kronor.</li>
-            <li>Bolagen försattes i konkurs och eRockets värde realiserades inte.</li>
-            <li>Artiklarna fortsätter att skada så länge de ligger kvar online.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="method-section" id="metod">
-      <div class="section-shell method-grid">
-        <div class="section-heading light reveal">
-          <p class="eyebrow">Publiceringsprinciper</p>
-          <h2>Redovisningen bygger på dokument som kan kontrolleras</h2>
-          <p>Varje central slutsats kopplas till originalljud, avtal, fakturor, leveransdata eller samtidiga handlingar.</p>
-        </div>
-        <div class="principles">
-          <article class="reveal"><strong>01</strong><h3>Källa före slutsats</h3><p>Varje påstående ska kunna spåras till ett namngivet underlag.</p></article>
-          <article class="reveal"><strong>02</strong><h3>Helheten före lösryckta röster</h3><p>Enskilda kundupplevelser får inte radera avtal, leveranser och den verkliga ansvarskedjan.</p></article>
-          <article class="reveal"><strong>03</strong><h3>Skydda tredje man</h3><p>Personnummer, privata kontaktuppgifter och kundmaterial publiceras inte öppet.</p></article>
-          <article class="reveal"><strong>04</strong><h3>Rätt till bemötande</h3><p>Borås Tidnings svar och relevanta rättelser ska återges tydligt när de finns.</p></article>
-        </div>
       </div>
     </section>
 
     <section class="section-shell final-question">
       <p class="eyebrow">Slutsats</p>
       <h2>Det som förstördes var en värderad kommersiell tillgång, inte en bluff.</h2>
-          <p>eRocket producerade webbplats, hosting, domän, SEO och rapportering innan faktura uppstod. Om avtalad Google-synlighet uteblev fick kunden leveransen utan faktura. Borås Tidning fick detta förklarat före publiceringen men gav ändå läsarna bilden av ett medvetet lurande.</p>
-      <a class="button primary" href="#top">Läs redovisningen från början</a>
+      <p>Den fulla dokumentationen finns nu uppdelad så att läsaren kan följa resan visuellt, kontrollera varje artikel, öppna varje fil och förstå skadan separat.</p>
+      <a class="button primary" href="bevisdatabas.html">Gå till fullarkivet</a>
     </section>
   </main>
 
@@ -860,7 +232,7 @@
     </div>
     <div>
       <strong>Version</strong>
-      <p>Levande digital dokumentation · version 4.1 · 12 juni 2026</p>
+      <p>Levande digital dokumentation · version 5.0 · 12 juni 2026</p>
     </div>
     <div>
       <strong>Rättelseprincip</strong>

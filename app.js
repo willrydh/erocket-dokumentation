@@ -106,6 +106,7 @@ const statusClass = {
 
 function renderEvidence(filter = "all") {
   const grid = document.querySelector("#evidenceGrid");
+  if (!grid) return;
   grid.innerHTML = evidence.map((item) => `
     <article class="evidence-card ${filter !== "all" && filter !== item.status ? "hidden" : ""}" data-status="${item.status}">
       <span class="status ${statusClass[item.status]}">${item.label}</span>
@@ -139,16 +140,18 @@ document.querySelectorAll(".evidence-jump").forEach((button) => {
 
 const menuButton = document.querySelector("#menuButton");
 const siteNav = document.querySelector("#siteNav");
-menuButton.addEventListener("click", () => {
-  const open = siteNav.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", String(open));
-});
-siteNav.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    siteNav.classList.remove("open");
-    menuButton.setAttribute("aria-expanded", "false");
+if (menuButton && siteNav) {
+  menuButton.addEventListener("click", () => {
+    const open = siteNav.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(open));
   });
-});
+  siteNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      siteNav.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
+}
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -164,5 +167,5 @@ document.querySelectorAll(".reveal").forEach((element) => observer.observe(eleme
 const progress = document.querySelector("#readingProgress");
 window.addEventListener("scroll", () => {
   const height = document.documentElement.scrollHeight - window.innerHeight;
-  progress.style.width = `${height > 0 ? (window.scrollY / height) * 100 : 0}%`;
+  if (progress) progress.style.width = `${height > 0 ? (window.scrollY / height) * 100 : 0}%`;
 }, { passive: true });

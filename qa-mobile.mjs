@@ -73,7 +73,9 @@ try {
       scrollWidth: document.documentElement.scrollWidth,
       h1Right: Math.round(document.querySelector("h1").getBoundingClientRect().right),
       menuVisible: getComputedStyle(document.querySelector("#menuButton")).display !== "none",
-      evidenceColumns: getComputedStyle(document.querySelector(".evidence-grid")).gridTemplateColumns,
+      evidenceColumns: document.querySelector(".evidence-grid")
+        ? getComputedStyle(document.querySelector(".evidence-grid")).gridTemplateColumns
+        : null,
       overflow: [...document.querySelectorAll("body *")]
         .filter((element) => element.getBoundingClientRect().right > window.innerWidth + 1 || element.getBoundingClientRect().left < -1)
         .slice(0, 20)
@@ -95,8 +97,8 @@ try {
 
   await send("Runtime.evaluate", {
     expression: `(() => {
-      const section = document.querySelector("#varfor");
-      document.querySelectorAll("#varfor .reveal").forEach((element) => element.classList.add("visible"));
+      const section = document.querySelector("#bevisbilder") || document.querySelector("#resan");
+      section.querySelectorAll(".reveal").forEach((element) => element.classList.add("visible"));
       window.scrollTo(0, section.getBoundingClientRect().top + window.scrollY);
     })()`
   });
