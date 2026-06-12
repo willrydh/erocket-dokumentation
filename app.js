@@ -10,8 +10,8 @@ const evidence = [
   {
     status: "disputed",
     label: "Publicerad uppgift",
-    title: "Den skadliga bilden knöts direkt till William",
-    claim: "Namn, bild, vd-roll och det förvanskade citatet gjorde William till ansiktet för ett kategoriskt lurandepåstående.",
+    title: "Den kritiska bilden knöts direkt till William",
+    claim: "Namn, bild, vd-roll och det omstridda citatet gjorde William till personlig bärare av artikelseriens huvudpåstående.",
     source: "Den fullständiga publiceringens rubrik, bild, bildtext och brödtext.",
     conclusion: "Läsaren gavs en personifierad bild som inte återgav den dokumenterade ansvarskedjan."
   },
@@ -45,7 +45,7 @@ const evidence = [
     title: "eRocket var en verklig produkt som levererade",
     claim: "Kundportal, kampanjer, sökord och rankingdata visar faktisk produktion och mätbara resultat.",
     source: "Bevarad dashboard, produktmaterial och Google-data.",
-    conclusion: "Påståendet om en bluff är oförenligt med den dokumenterade produkten och dess registrerade prestationer."
+    conclusion: "Den dokumenterade produkten och dess registrerade prestationer behöver vägas in i bedömningen av artikelseriens bild."
   },
   {
     status: "disputed",
@@ -61,7 +61,7 @@ const evidence = [
     title: "William agerade när försäljningsproblem upptäcktes",
     claim: "William redovisade intern kontroll, kundkontakt, avslutat samarbete och personalåtgärder för reportern Matilda Spetz.",
     source: "Flera tidskodade intervjuavsnitt och e-postkorrespondens.",
-    conclusion: "Agerandet stödjer inte påståendet att William medvetet drev ett upplägg för att lura kunder."
+    conclusion: "Agerandet behöver vägas in vid bedömningen av om artikelseriens helhetsbild var rättvisande."
   },
   {
     status: "corroborated",
@@ -77,13 +77,13 @@ const evidence = [
     title: "eRocket hade ett dokumenterat mångmiljonvärde",
     claim: "En daterad rapport anger ett värdeintervall om 39,6–48,4 miljoner kronor före konkurserna.",
     source: "Värderingsrapport daterad 18 januari 2024.",
-    conclusion: "Det som förstördes var en värderad kommersiell tillgång, inte en bluff."
+    conclusion: "Underlaget visar att det fanns en värderad kommersiell tillgång."
   },
   {
     status: "disputed",
     label: "Publicerad uppgift",
-    title: "Lurande slogs fast utan att helheten redovisades",
-    claim: "Rubriken presenterade lurande som ett redaktionellt konstaterande trots den omfattande motbevisningen.",
+    title: "Huvudpåståendet presenterades utan att helheten redovisades",
+    claim: "Rubriken presenterade påståendet om vilseledning som ett redaktionellt konstaterande trots det omfattande motunderlaget.",
     source: "Rubriken, artikelns helhetsintryck och materialet redaktionen hade före publicering.",
     conclusion: "Läsare utan egen kännedom fick en bild som motsägs av den samlade dokumentationen."
   },
