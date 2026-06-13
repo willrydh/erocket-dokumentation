@@ -796,6 +796,31 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
 .responsibility-note h2 { margin-bottom: 0; font-size: clamp(2.2rem, 3.4vw, 4rem); }
 .responsibility-note p:not(.eyebrow) { margin: 0; color: #cbd4cf; font-size: .98rem; line-height: 1.72; }
 .responsibility-section { padding-block: 118px; border-top: 1px solid var(--line); }
+.responsibility-section.compact { padding-top: 86px; }
+.responsibility-matrix {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 46px;
+}
+.matrix-person {
+  display: grid; grid-template-columns: minmax(190px, .64fr) 1fr; gap: 22px; padding: 24px;
+  background: rgba(255,253,248,.92); border: 1px solid var(--line); border-left: 5px solid var(--red);
+  box-shadow: 0 14px 34px rgba(26, 29, 25, .07);
+}
+.matrix-person.witness { border-left-color: var(--green); }
+.matrix-person h3 {
+  margin: 28px 0 10px; font: clamp(1.65rem, 2.2vw, 2.45rem)/1.08 var(--serif);
+  overflow-wrap: anywhere;
+}
+.matrix-person p { margin: 0; color: var(--muted); font-size: .8rem; line-height: 1.55; }
+.matrix-person dl { margin: 0; }
+.matrix-person dt {
+  margin-top: 0; color: var(--ink); font-size: .6rem; font-weight: 900;
+  letter-spacing: .09em; text-transform: uppercase;
+}
+.matrix-person dt:not(:first-child) { margin-top: 14px; }
+.matrix-person dd { margin: 4px 0 0; color: #48514c; font-size: .8rem; line-height: 1.58; }
+.matrix-person .evidence-chain-mini {
+  grid-column: 1 / -1; padding-top: 4px; border-top: 1px solid rgba(20,32,29,.08);
+}
 .responsibility-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 46px;
 }
@@ -977,6 +1002,7 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .quote-comparison { grid-template-columns: 1fr; gap: 16px; }
   .versus { transform: rotate(90deg); }
   .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .motive-grid, .risk-comparison, .arc-track, .invitation-grid, .journey-map, .route-grid, .archive-grid, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid, .visual-proof-grid, .responsibility-grid, .responsibility-grid.two, .responsibility-claims { grid-template-columns: 1fr 1fr; }
+  .responsibility-matrix, .matrix-person { grid-template-columns: 1fr; }
   .chain { grid-template-columns: 1fr; }
   .chain i { transform: rotate(90deg); text-align: center; }
   .knowledge-grid { grid-template-columns: 1fr 1fr; }
@@ -1106,7 +1132,7 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .review-card h3 { font-size: 1.6rem; }
   .quote-panel { min-height: auto; padding: 25px; transform: none !important; }
   .quote-panel blockquote { margin: 35px 0 25px; font-size: 1.8rem; }
-  .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .knowledge-grid, .principles, .motive-grid, .risk-comparison, .scenario-grid, .editorial-sequence, .arc-track, .invitation-grid, .journey-map, .route-grid, .archive-grid, .archive-stats, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid, .visual-proof-grid, .responsibility-note, .responsibility-grid, .responsibility-grid.two, .responsibility-claims { grid-template-columns: 1fr; }
+  .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .knowledge-grid, .principles, .motive-grid, .risk-comparison, .scenario-grid, .editorial-sequence, .arc-track, .invitation-grid, .journey-map, .route-grid, .archive-grid, .archive-stats, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid, .visual-proof-grid, .responsibility-note, .responsibility-matrix, .matrix-person, .responsibility-grid, .responsibility-grid.two, .responsibility-claims { grid-template-columns: 1fr; }
   .journey-map { gap: 10px; margin-top: 30px; }
   .journey-step {
     min-height: 0; display: grid; grid-template-columns: 104px 1fr; grid-template-rows: auto auto auto;
@@ -1127,6 +1153,9 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .route-card h3 { margin: 28px 0 10px; font-size: 1.55rem; }
   .responsibility-note { margin-top: 0; padding: 24px; }
   .responsibility-note h2 { font-size: clamp(2rem, 9vw, 3.25rem); }
+  .responsibility-section.compact { padding-top: 70px; }
+  .matrix-person { padding: 20px; gap: 18px; }
+  .matrix-person h3 { margin-top: 24px; font-size: clamp(1.6rem, 7.5vw, 2.35rem); }
   .responsibility-card { min-height: 0; padding: 22px; }
   .responsibility-card h3 { margin-top: 26px; font-size: clamp(1.85rem, 8.5vw, 2.7rem); }
   .responsibility-claims article { min-height: 0; }
