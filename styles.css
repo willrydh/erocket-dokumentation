@@ -94,14 +94,27 @@ img { max-width: 100%; display: block; }
 }
 .brand strong, .brand small { display: block; }
 .brand small { margin-top: 4px; color: var(--muted); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; }
-nav { display: grid; gap: 8px; justify-items: end; align-items: center; }
-.nav-primary, .nav-secondary { display: flex; gap: 7px; align-items: center; justify-content: flex-end; flex-wrap: wrap; }
+nav {
+  display: grid; gap: 8px; justify-items: end; align-items: center;
+  min-width: 0; max-width: min(820px, calc(100vw - 340px));
+}
+.nav-primary, .nav-secondary { display: flex; gap: 7px; align-items: center; justify-content: flex-end; max-width: 100%; min-width: 0; }
+.nav-primary { flex-wrap: wrap; }
+.nav-secondary {
+  flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px;
+  scrollbar-width: none;
+}
+.nav-secondary::-webkit-scrollbar { display: none; }
 .nav-primary a, .nav-secondary a {
   display: inline-flex; align-items: center; min-height: 34px; padding: 7px 12px;
+  flex: 0 0 auto; white-space: nowrap;
   color: #343936; text-decoration: none; border-radius: 99px; font-size: .76rem; font-weight: 800;
 }
 .nav-primary a { border: 1px solid var(--line); background: rgba(255, 253, 248, .46); }
-.nav-secondary a { min-height: 28px; padding: 4px 8px; color: var(--muted); font-size: .68rem; }
+.nav-secondary a {
+  min-height: 30px; padding: 5px 9px; border: 1px solid rgba(20,32,29,.08);
+  background: rgba(255,253,248,.34); color: var(--muted); font-size: .68rem;
+}
 .nav-primary a:hover, .nav-secondary a:hover { color: var(--red); background: rgba(255, 253, 248, .78); }
 .site-header[data-page="overview"] [data-nav="overview"],
 .site-header[data-page="database"] [data-nav="database"],
@@ -1066,6 +1079,66 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .chain i { transform: rotate(90deg); text-align: center; }
   .knowledge-grid { grid-template-columns: 1fr 1fr; }
   .timeline .featured { margin-inline: 0; }
+}
+
+@media (max-width: 1100px) {
+  html { scroll-padding-top: 78px; }
+  body.nav-open { overflow: hidden; }
+  body.nav-open .sticky-interview-player { display: none; }
+  .site-header { min-height: 66px; align-items: center; }
+  .menu-button { display: block; min-height: 44px; padding-inline: 16px; }
+  .brand { min-width: 0; }
+  .brand strong { font-size: .9rem; }
+  .brand small {
+    display: block; max-width: min(54vw, 230px); margin-top: 3px; overflow: hidden;
+    color: #65716d; font-size: .56rem; letter-spacing: .11em; line-height: 1.15;
+    text-overflow: ellipsis; white-space: nowrap;
+  }
+  nav {
+    display: none; position: fixed; top: 66px; right: 0; bottom: 0; left: 0; z-index: 70;
+    max-width: none; height: calc(100dvh - 66px); gap: 0; padding: 18px 18px 30px;
+    overflow-y: auto; overscroll-behavior: contain;
+    background:
+      radial-gradient(circle at top left, rgba(182,67,49,.13), transparent 34%),
+      linear-gradient(180deg, #f4f0e8, #efe9de);
+    border-bottom: 0; box-shadow: 0 24px 70px rgba(0,0,0,.24);
+  }
+  nav.open { display: block; }
+  nav.open::before {
+    content: "Resan genom bevisningen"; display: block; margin: 0 0 14px;
+    color: var(--red); font-size: .68rem; font-weight: 900; letter-spacing: .15em;
+    text-transform: uppercase;
+  }
+  .nav-primary { display: grid; grid-template-columns: 1fr; gap: 10px; width: 100%; overflow: visible; }
+  .nav-primary a {
+    position: relative; display: flex; align-items: center;
+    width: 100%; min-height: 56px; justify-content: flex-start; padding: 14px 16px;
+    border: 1px solid rgba(20,32,29,.12); border-radius: 16px;
+    background: rgba(255,253,248,.74); color: #28312e; box-shadow: 0 12px 28px rgba(20,32,29,.06);
+  }
+  .site-header[data-page="overview"] [data-nav="overview"],
+  .site-header[data-page="timeline"] [data-nav="timeline"],
+  .site-header[data-page="model"] [data-nav="model"],
+  .site-header[data-page="articles"] [data-nav="articles"],
+  .site-header[data-page="database"] [data-nav="database"],
+  .site-header[data-page="damage"] [data-nav="damage"],
+  .site-header[data-page="legal"] [data-nav="legal"],
+  .site-header[data-page="responsibility"] [data-nav="responsibility"] {
+    background: var(--ink); border-color: var(--ink); color: white; font-weight: 900;
+  }
+  .nav-secondary {
+    display: flex; flex-wrap: wrap; gap: 8px; width: 100%; margin-top: 18px; padding-top: 16px;
+    overflow: visible; border-top: 1px solid rgba(20,32,29,.12);
+  }
+  .nav-secondary::before {
+    content: "På den här sidan"; flex: 0 0 100%; color: #65716d; font-size: .68rem;
+    font-weight: 900; letter-spacing: .14em; text-transform: uppercase;
+  }
+  .nav-primary a, .nav-secondary a { text-decoration: none; }
+  .nav-secondary a {
+    width: auto; min-height: 38px; padding: 8px 11px; border: 1px solid rgba(20,32,29,.12);
+    border-radius: 999px; background: rgba(255,253,248,.62); color: #3f4742; font-size: .74rem;
+  }
 }
 
 @media (max-width: 720px) {
