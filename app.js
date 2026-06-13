@@ -147,6 +147,7 @@ if (menuButton && siteNav) {
     menuButton.setAttribute("aria-expanded", String(open));
     menuButton.textContent = open ? "Stäng" : closedMenuLabel;
     document.body.classList.toggle("nav-open", open);
+    if (open) document.body.classList.remove("mobile-nav-hidden");
   };
 
   menuButton.addEventListener("click", () => {
@@ -160,6 +161,49 @@ if (menuButton && siteNav) {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") setNavOpen(false);
   });
+
+  const mobileNavQuery = window.matchMedia("(max-width: 720px)");
+  let lastScrollY = window.scrollY;
+  let scrollTicking = false;
+
+  const updateMobileNavOnScroll = () => {
+    const currentScrollY = Math.max(0, window.scrollY);
+    const delta = currentScrollY - lastScrollY;
+    const isMobile = mobileNavQuery.matches;
+    const isOpen = document.body.classList.contains("nav-open");
+
+    document.body.classList.toggle("mobile-nav-scrolled", isMobile && currentScrollY > 14);
+
+    if (!isMobile || isOpen || currentScrollY < 28) {
+      document.body.classList.remove("mobile-nav-hidden");
+      lastScrollY = currentScrollY;
+      scrollTicking = false;
+      return;
+    }
+
+    if (delta > 8 && currentScrollY > 118) {
+      document.body.classList.add("mobile-nav-hidden");
+    } else if (delta < -6) {
+      document.body.classList.remove("mobile-nav-hidden");
+    }
+
+    lastScrollY = currentScrollY;
+    scrollTicking = false;
+  };
+
+  const requestMobileNavUpdate = () => {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    window.requestAnimationFrame(updateMobileNavOnScroll);
+  };
+
+  window.addEventListener("scroll", requestMobileNavUpdate, { passive: true });
+  mobileNavQuery.addEventListener("change", () => {
+    lastScrollY = window.scrollY;
+    document.body.classList.remove("mobile-nav-hidden");
+    document.body.classList.toggle("mobile-nav-scrolled", mobileNavQuery.matches && window.scrollY > 14);
+  });
+  updateMobileNavOnScroll();
 }
 
 const interviewSource = "media/intervju-bt-2022-11-16-oklippt.m4a";
