@@ -919,7 +919,7 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green);
 }
 .time-jump {
-  align-self: flex-start; padding: 8px 11px; border: 1px solid var(--green); border-radius: 99px;
+  align-self: flex-start; min-height: 44px; padding: 10px 14px; border: 1px solid var(--green); border-radius: 99px;
   background: #e4efe8; color: var(--green); cursor: pointer;
   font-size: .68rem; font-weight: 800; letter-spacing: .08em;
 }
