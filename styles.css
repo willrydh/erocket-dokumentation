@@ -109,7 +109,8 @@ nav { display: grid; gap: 8px; justify-items: end; align-items: center; }
 .site-header[data-page="timeline"] [data-nav="timeline"],
 .site-header[data-page="model"] [data-nav="model"],
 .site-header[data-page="damage"] [data-nav="damage"],
-.site-header[data-page="legal"] [data-nav="legal"] {
+.site-header[data-page="legal"] [data-nav="legal"],
+.site-header[data-page="responsibility"] [data-nav="responsibility"] {
   background: var(--ink); color: var(--white); border-color: var(--ink);
 }
 .menu-button { display: none; border: 1px solid var(--line); background: transparent; padding: 8px 12px; border-radius: 99px; }
@@ -787,6 +788,48 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
 .source-grid a:hover { border-color: var(--red); transform: translateY(-2px); }
 .source-grid strong { font: 1.35rem/1.16 var(--serif); color: var(--red-dark); }
 .source-grid span { margin-top: auto; color: var(--muted); font-size: .74rem; }
+.responsibility-note {
+  display: grid; grid-template-columns: .72fr 1.28fr; gap: 32px; align-items: end;
+  margin-top: -36px; padding: 30px; background: var(--night); color: white; box-shadow: var(--shadow);
+  border-left: 6px solid var(--green);
+}
+.responsibility-note h2 { margin-bottom: 0; font-size: clamp(2.2rem, 3.4vw, 4rem); }
+.responsibility-note p:not(.eyebrow) { margin: 0; color: #cbd4cf; font-size: .98rem; line-height: 1.72; }
+.responsibility-section { padding-block: 118px; border-top: 1px solid var(--line); }
+.responsibility-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 46px;
+}
+.responsibility-grid.two { grid-template-columns: repeat(2, 1fr); }
+.responsibility-card {
+  min-height: 620px; display: flex; flex-direction: column; padding: 26px;
+  background: var(--white); border: 1px solid var(--line); border-top: 5px solid var(--green);
+  box-shadow: 0 16px 42px rgba(26, 29, 25, .08);
+}
+.responsibility-card.primary { border-top-color: var(--red); }
+.responsibility-card h3 {
+  margin: 34px 0 12px; font: clamp(2rem, 3vw, 3.25rem)/1.05 var(--serif);
+  overflow-wrap: anywhere;
+}
+.role-line { margin: 0 0 22px; color: #3f4540; font-weight: 700; line-height: 1.55; }
+.responsibility-card dl { margin: 0; }
+.responsibility-card dt {
+  margin-top: 18px; color: var(--ink); font-size: .62rem; font-weight: 900;
+  letter-spacing: .09em; text-transform: uppercase;
+}
+.responsibility-card dd {
+  margin: 5px 0 0; color: var(--muted); font-size: .82rem; line-height: 1.62;
+}
+.responsibility-card .evidence-chain-mini { margin-top: auto; padding-top: 22px; }
+.responsibility-claims {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 44px;
+}
+.responsibility-claims article {
+  min-height: 310px; display: flex; flex-direction: column; padding: 24px;
+  background: var(--white); border: 1px solid var(--line); border-top: 5px solid var(--red);
+}
+.responsibility-claims strong { color: var(--red); font: 2.4rem/1 var(--serif); }
+.responsibility-claims h3 { margin: 48px 0 14px; font: 1.6rem/1.14 var(--serif); }
+.responsibility-claims p { margin-top: auto; color: var(--muted); font-size: .82rem; line-height: 1.62; }
 .audio-section { padding-block: 115px 60px; }
 .audio-card { display: grid; grid-template-columns: .9fr 1.1fr; gap: 24px; align-items: center; margin-top: 44px; padding: 28px; background: var(--white); border: 1px solid var(--line); border-top: 6px solid var(--red); }
 .audio-card h3 { margin: 0 0 12px; font: 2rem/1.15 var(--serif); }
@@ -933,7 +976,7 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .intro-grid .section-heading { position: static; }
   .quote-comparison { grid-template-columns: 1fr; gap: 16px; }
   .versus { transform: rotate(90deg); }
-  .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .motive-grid, .risk-comparison, .arc-track, .invitation-grid, .journey-map, .route-grid, .archive-grid, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid, .visual-proof-grid { grid-template-columns: 1fr 1fr; }
+  .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .motive-grid, .risk-comparison, .arc-track, .invitation-grid, .journey-map, .route-grid, .archive-grid, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid, .visual-proof-grid, .responsibility-grid, .responsibility-grid.two, .responsibility-claims { grid-template-columns: 1fr 1fr; }
   .chain { grid-template-columns: 1fr; }
   .chain i { transform: rotate(90deg); text-align: center; }
   .knowledge-grid { grid-template-columns: 1fr 1fr; }
@@ -982,7 +1025,8 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .site-header[data-page="articles"] [data-nav="articles"],
   .site-header[data-page="database"] [data-nav="database"],
   .site-header[data-page="damage"] [data-nav="damage"],
-  .site-header[data-page="legal"] [data-nav="legal"] {
+  .site-header[data-page="legal"] [data-nav="legal"],
+  .site-header[data-page="responsibility"] [data-nav="responsibility"] {
     background: var(--ink); border-color: var(--ink); color: white; font-weight: 900;
   }
   .nav-secondary {
@@ -1053,7 +1097,7 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .numbers { grid-template-columns: 1fr 1fr; margin-top: 45px; }
   .numbers article { padding: 25px 14px; }
   .numbers strong { font-size: 2.7rem; }
-  .intro-grid, #performance-model, #external-sales, .economy-section, .conclusions, .quote-section, .prior-section, .timeline-section, .method-section, .matrix-section, .final-question, .product-section, .evidence-mass, .why-section, .risk-model-section, .core-case-section, .invitation-section, .story-journey, .route-section, .integrity-section, .bt-archive-section, .visual-proof { padding-block: 85px; }
+  .intro-grid, #performance-model, #external-sales, .economy-section, .conclusions, .quote-section, .prior-section, .timeline-section, .method-section, .matrix-section, .final-question, .product-section, .evidence-mass, .why-section, .risk-model-section, .core-case-section, .invitation-section, .story-journey, .route-section, .integrity-section, .bt-archive-section, .visual-proof, .responsibility-section { padding-block: 85px; }
   .full-archive { padding-block: 48px 85px; }
   .full-archive-controls { padding: 24px; }
   .living-report { margin-top: 0; padding-block: 34px; border-left-width: 0; border-top: 5px solid var(--green); }
@@ -1062,7 +1106,7 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .review-card h3 { font-size: 1.6rem; }
   .quote-panel { min-height: auto; padding: 25px; transform: none !important; }
   .quote-panel blockquote { margin: 35px 0 25px; font-size: 1.8rem; }
-  .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .knowledge-grid, .principles, .motive-grid, .risk-comparison, .scenario-grid, .editorial-sequence, .arc-track, .invitation-grid, .journey-map, .route-grid, .archive-grid, .archive-stats, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid, .visual-proof-grid { grid-template-columns: 1fr; }
+  .model-grid, .economy-grid, .evidence-grid, .conclusion-grid, .knowledge-grid, .principles, .motive-grid, .risk-comparison, .scenario-grid, .editorial-sequence, .arc-track, .invitation-grid, .journey-map, .route-grid, .archive-grid, .archive-stats, .full-archive-grid, .integrity-grid, .timecode-grid, .bt-archive-grid, .article-map-list, .source-grid, .visual-proof-grid, .responsibility-note, .responsibility-grid, .responsibility-grid.two, .responsibility-claims { grid-template-columns: 1fr; }
   .journey-map { gap: 10px; margin-top: 30px; }
   .journey-step {
     min-height: 0; display: grid; grid-template-columns: 104px 1fr; grid-template-rows: auto auto auto;
@@ -1081,6 +1125,12 @@ footer p { max-width: 320px; color: #9fa8a3; font-size: .7rem; }
   .journey-thesis { padding: 24px; }
   .route-card { min-height: 0; padding: 20px; }
   .route-card h3 { margin: 28px 0 10px; font-size: 1.55rem; }
+  .responsibility-note { margin-top: 0; padding: 24px; }
+  .responsibility-note h2 { font-size: clamp(2rem, 9vw, 3.25rem); }
+  .responsibility-card { min-height: 0; padding: 22px; }
+  .responsibility-card h3 { margin-top: 26px; font-size: clamp(1.85rem, 8.5vw, 2.7rem); }
+  .responsibility-claims article { min-height: 0; }
+  .responsibility-claims h3 { margin-top: 32px; }
   .visual-card.large { grid-column: auto; }
   .visual-card { min-height: 0; display: grid; grid-template-columns: 112px 1fr; }
   .visual-card a { min-height: 112px; height: 112px; }

@@ -15,7 +15,8 @@ const pages = [
   "artiklar.html",
   "bevisdatabas.html",
   "skada.html",
-  "juridik.html"
+  "juridik.html",
+  "ansvariga.html"
 ];
 
 const viewports = [
