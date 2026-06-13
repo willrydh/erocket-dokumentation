@@ -298,6 +298,47 @@ function setupInterviewAudio() {
 
 setupInterviewAudio();
 
+function setupStickyPlayerBehavior() {
+  const player = document.querySelector("#globalInterviewPlayer");
+  if (!player) return;
+
+  let compactTicking = false;
+  let expandedUntil = 0;
+
+  const expandTemporarily = () => {
+    expandedUntil = Date.now() + 4200;
+    document.body.classList.remove("media-player-compact");
+  };
+
+  const updatePlayerMode = () => {
+    const shouldCompact =
+      window.scrollY > 150 &&
+      !document.body.classList.contains("nav-open") &&
+      Date.now() > expandedUntil;
+
+    document.body.classList.toggle("media-player-compact", shouldCompact);
+    compactTicking = false;
+  };
+
+  const requestPlayerModeUpdate = () => {
+    if (compactTicking) return;
+    compactTicking = true;
+    window.requestAnimationFrame(updatePlayerMode);
+  };
+
+  ["pointerdown", "focusin", "mouseenter"].forEach((eventName) => {
+    player.addEventListener(eventName, expandTemporarily);
+  });
+
+  window.addEventListener("scroll", requestPlayerModeUpdate, { passive: true });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") document.body.classList.remove("media-player-compact");
+  });
+  updatePlayerMode();
+}
+
+setupStickyPlayerBehavior();
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
